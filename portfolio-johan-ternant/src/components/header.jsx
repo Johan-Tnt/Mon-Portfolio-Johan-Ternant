@@ -21,40 +21,11 @@ const Header = () => {
           className="img_johan"
         />
         <div>
-          <h1 className="title_h1">Johan Ternant</h1>
-          <h2>Intégrateur Web</h2>
-          <p>E-mail : ternant.johan@sfr.fr</p>
+          <h1 className="information_profile">Johan Ternant</h1>
+          <h2 className="information_profile">Intégrateur Web</h2>
+          <p className="information_profile">E-mail : ternant.johan@sfr.fr</p>
         </div>
       </a>
-
-      <div className="link_social">
-        <a
-          href="https://github.com/Johan-Tnt"
-          className="li_navigation contact_button"
-        >
-          <FontAwesomeIcon
-            icon={faGithub}
-            size={"xl"}
-            className="icon_contact"
-          />
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/johan-ternant-064b48313/"
-          className="li_navigation contact_button"
-        >
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            size={"xl"}
-            className="icon_contact"
-          />
-        </a>
-
-        <a href="" className="li_navigation contact_button">
-          <FontAwesomeIcon icon={faFile} size={"xl"} className="icon_contact" />
-          CV
-        </a>
-      </div>
 
       <nav className="navigation">
         <ul className="ul_navigation">
@@ -74,6 +45,29 @@ const Header = () => {
             />
             <li className="li_navigation"> Projects </li>
           </NavLink>
+        </ul>
+
+        <ul>
+          <div className="link_social">
+            <a
+              href="https://github.com/Johan-Tnt"
+              className="li_navigation contact_button"
+            >
+              <FontAwesomeIcon icon={faGithub} size={"xl"} />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/johan-ternant-064b48313/"
+              className="li_navigation contact_button"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size={"xl"} />
+            </a>
+
+            <a href="" className="li_navigation contact_button">
+              <FontAwesomeIcon icon={faFile} size={"xl"} />
+              CV
+            </a>
+          </div>
         </ul>
       </nav>
     </div>

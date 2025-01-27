@@ -4,7 +4,7 @@
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="profile_dev">
+      <div>
         <div>
           <p className="design_johan">
             Designed by Johan Ternant, All Right Reserved © 2025

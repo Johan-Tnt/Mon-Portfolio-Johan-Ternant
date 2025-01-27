@@ -28,7 +28,7 @@
   cursor: pointer;
   color: white;
 }
-.title_h1 {
+.information_profile {
   cursor: pointer;
   letter-spacing: -0.5px;
   margin-left: 10px;
@@ -36,6 +36,7 @@
 .profile_dev {
   display: flex;
   align-items: center;
+  padding-left: 20px;
 }
 .icon_header {
   left: 15px;
@@ -59,10 +60,7 @@
   border-style: none;
   cursor: pointer;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   text-decoration: none;
-}
-.icon_contact {
-  margin-right: 5px;
 }
 //Fin code Johan
