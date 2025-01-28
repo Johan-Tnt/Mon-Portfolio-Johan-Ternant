@@ -63,7 +63,11 @@ const Header = () => {
               <FontAwesomeIcon icon={faLinkedin} size={"xl"} />
             </a>
 
-            <a href="" className="li_navigation contact_button">
+            <a
+              href="./public/media/CV-Johan-Web.pdf"
+              target="_blank"
+              className="li_navigation contact_button"
+            >
               <FontAwesomeIcon icon={faFile} size={"xl"} />
               CV
             </a>
