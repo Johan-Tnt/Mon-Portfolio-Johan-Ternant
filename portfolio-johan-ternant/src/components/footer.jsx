@@ -1,4 +1,4 @@
-//Début code Johan
+//Code éditer par Johan
 //Contient la mise en page globale du "footer"
 
 const Footer = () => {
@@ -16,5 +16,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-//Fin code Johan

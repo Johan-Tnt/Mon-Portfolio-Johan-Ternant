@@ -1,4 +1,4 @@
-//Début code Johan
+//Code éditer par Johan
 //Contient la/les routes des pages "home", "sign in" et "user" (react router)
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
@@ -20,4 +20,3 @@ const App = () => {
 };
 
 export default App;
-//Fin code Johan

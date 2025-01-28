@@ -1,4 +1,4 @@
-//Début code Johan
+//Code éditer par Johan
 //Contient le menu principal "Home"
 import Slider from "../slider";
 
@@ -184,5 +184,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-//Fin code Johan

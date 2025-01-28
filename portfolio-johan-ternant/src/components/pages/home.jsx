@@ -1,4 +1,4 @@
-//Début code Johan
+//Code éditer par Johan
 //Contient le menu principal "Home"
 
 const Home = () => {
@@ -29,8 +29,8 @@ const Home = () => {
         <div>
           <h3>Langues </h3>
           <p>Français - langue maternelle</p>
-          <p>Anglais - </p>
-          <p>Espagnol - </p>
+          <p>Anglais - A2</p>
+          <p>Espagnol - A1</p>
         </div>
       </section>
     </main>
@@ -38,5 +38,3 @@ const Home = () => {
 };
 
 export default Home;
-
-//Fin code Johan

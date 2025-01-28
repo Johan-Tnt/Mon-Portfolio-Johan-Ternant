@@ -1,4 +1,4 @@
-//Début code Johan
+//Code éditer par Johan
 import { useState } from "react"; //useState pour la gestion des états
 /* eslint-disable react/prop-types */
 
@@ -35,5 +35,3 @@ const Slider = ({ images, alt }) => {
 };
 
 export default Slider;
-
-//Fin code Johan

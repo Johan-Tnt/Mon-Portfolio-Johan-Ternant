@@ -1,4 +1,4 @@
-//Début code Johan
+//Code éditer par Johan
 //Contient la mise en page globale du "header"
 
 //Importation des modules nécessaires
@@ -79,5 +79,3 @@ const Header = () => {
 };
 
 export default Header;
-
-//Fin code Johan
