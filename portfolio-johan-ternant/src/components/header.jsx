@@ -14,9 +14,9 @@ import { faDiagramProject } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
   return (
     <div className="header">
-      <a className="profile_dev ">
+      <div className="profile_dev ">
         <img
-          src="./src/assets/img/Johan-Ternant-profile.jpg"
+          src="./src/assets/img-profile-dev/Johan-Ternant-profile-new.webp"
           alt="Johan Ternant"
           className="img_johan"
         />
@@ -25,10 +25,39 @@ const Header = () => {
           <h2 className="information_profile">Intégrateur Web</h2>
           <p className="information_profile">E-mail : ternant.johan@sfr.fr</p>
         </div>
-      </a>
+      </div>
 
       <nav className="navigation">
         <ul className="ul_navigation">
+          <div className="link_social">
+            <a
+              href="https://github.com/Johan-Tnt"
+              className="li_navigation contact_button"
+              alt="GitHub"
+              aria-label="Link GitHub"
+            >
+              <FontAwesomeIcon icon={faGithub} size={"xl"} />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/johan-ternant-064b48313/"
+              className="li_navigation contact_button"
+              alt="Linkedin"
+              aria-label="Link Linkedin"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size={"xl"} />
+            </a>
+
+            <a
+              href="./public/media/CV-Johan-Web.pdf"
+              target="_blank"
+              className="li_navigation contact_button"
+            >
+              <FontAwesomeIcon icon={faFile} size={"xl"} />
+              CV
+            </a>
+          </div>
+
           <NavLink to="/">
             <FontAwesomeIcon
               icon={faHouse}
@@ -45,33 +74,6 @@ const Header = () => {
             />
             <li className="li_navigation"> Projects </li>
           </NavLink>
-        </ul>
-
-        <ul>
-          <div className="link_social">
-            <a
-              href="https://github.com/Johan-Tnt"
-              className="li_navigation contact_button"
-            >
-              <FontAwesomeIcon icon={faGithub} size={"xl"} />
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/johan-ternant-064b48313/"
-              className="li_navigation contact_button"
-            >
-              <FontAwesomeIcon icon={faLinkedin} size={"xl"} />
-            </a>
-
-            <a
-              href="./public/media/CV-Johan-Web.pdf"
-              target="_blank"
-              className="li_navigation contact_button"
-            >
-              <FontAwesomeIcon icon={faFile} size={"xl"} />
-              CV
-            </a>
-          </div>
         </ul>
       </nav>
     </div>
