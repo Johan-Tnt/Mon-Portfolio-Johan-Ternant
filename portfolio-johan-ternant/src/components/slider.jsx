@@ -1,5 +1,7 @@
 //Code éditer par Johan
 import { useState } from "react"; //useState pour la gestion des états
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 /* eslint-disable react/prop-types */
 
 const Slider = ({ images, alt }) => {
@@ -20,7 +22,7 @@ const Slider = ({ images, alt }) => {
   return (
     <div className="slider">
       <button onClick={prevSlide} className="slider-btn prev-btn">
-        &#8249;
+        <FontAwesomeIcon icon={faArrowLeft} />
       </button>
       <img
         src={images[currentIndex]}
@@ -28,7 +30,7 @@ const Slider = ({ images, alt }) => {
         className="slider-image"
       />
       <button onClick={nextSlide} className="slider-btn next-btn">
-        &#8250;
+        <FontAwesomeIcon icon={faArrowRight} />
       </button>
     </div>
   );

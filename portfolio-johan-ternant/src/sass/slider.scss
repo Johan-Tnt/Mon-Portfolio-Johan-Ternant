@@ -11,9 +11,8 @@
 
 .slider-image {
   width: 100%;
-  //max-height: 300px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 15px;
 }
 
 .slider-btn {
@@ -23,10 +22,11 @@
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  font-size: 1.5rem;
+  font-size: 18px;
   padding: 0.5rem;
   cursor: pointer;
-  z-index: 10;
+  z-index: 10; // Moins élevé que celui du projects
+  border-radius: 3px;
 }
 
 .prev-btn {

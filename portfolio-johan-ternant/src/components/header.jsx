@@ -7,7 +7,6 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faDiagramProject } from "@fortawesome/free-solid-svg-icons";
 
@@ -53,7 +52,6 @@ const Header = () => {
               target="_blank"
               className="li_navigation contact_button"
             >
-              <FontAwesomeIcon icon={faFile} size={"xl"} />
               CV
             </a>
           </div>
