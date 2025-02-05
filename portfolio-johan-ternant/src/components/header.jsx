@@ -19,10 +19,10 @@ const Header = () => {
           alt="Johan Ternant"
           className="img_johan"
         />
-        <div>
-          <h1 className="information_profile">Johan Ternant</h1>
-          <h2 className="information_profile">Intégrateur Web</h2>
-          <p className="information_profile">E-mail : ternant.johan@sfr.fr</p>
+        <div className="information_profile">
+          <h1>Johan Ternant</h1>
+          <h2>Intégrateur Web</h2>
+          <p>ternant.johan@sfr.fr</p>
         </div>
       </div>
 

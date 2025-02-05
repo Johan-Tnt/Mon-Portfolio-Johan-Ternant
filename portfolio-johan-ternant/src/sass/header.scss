@@ -65,3 +65,43 @@
   padding: 10px;
   text-decoration: none;
 }
+
+//Media Querries
+@media (max-width: 768px) {
+  .header {
+    justify-content: center;
+  }
+  .navigation {
+    margin-top: 120px;
+    right: initial;
+  }
+  .ul_navigation {
+    flex-direction: initial;
+  }
+  .profile_dev {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    height: 420px;
+    justify-content: center;
+  }
+  .navigation {
+    margin-top: 150px;
+    right: initial;
+  }
+  .ul_navigation {
+    flex-direction: column;
+    margin-top: 120px;
+  }
+  .profile_dev {
+    margin-bottom: 130px;
+    display: initial;
+  }
+  .img_johan {
+    left: 50px;
+    position: relative;
+  }
+}
