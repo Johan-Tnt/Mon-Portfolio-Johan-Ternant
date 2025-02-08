@@ -136,8 +136,7 @@ const projects = [
       "./src/assets/img-webp-cp/Booki-2-new.webp",
     ],
     alt: "Booki",
-    githubLink:
-      "https://github.com/Johan-Tnt/Ternant_Johan_n_4_Am-liorez_l_interface_d_un_site_mobile_avec_des_animations_CSS_27_11_2023",
+    githubLink: "",
   },
 ];
 

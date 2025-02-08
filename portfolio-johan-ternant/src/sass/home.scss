@@ -6,3 +6,105 @@
   padding-left: 20px;
   //max-width: 1440px;
 }
+.home {
+  //padding: 2rem;
+  padding: 2rem 1rem;
+
+  .bento-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .bento-box,
+  .bento-box.box-social {
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: black;
+    color: white;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .bento-box.box-social {
+    /*h3 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }*/
+
+    .link_social {
+      display: flex;
+      gap: 1rem;
+      //justify-content: center;
+
+      .contact_button {
+        //width: 3rem;
+        //height: 3rem;
+        border-radius: 50%;
+        color: white;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .box-argent-bank {
+    padding: 20px;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    .project-image {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin-top: 15px;
+    }
+
+    .button-link {
+      display: block;
+      width: 100px;
+      margin: 10px auto;
+      padding: 10px 20px;
+      background: var(
+        --Button-Gradient,
+        linear-gradient(193deg, #504a4a -11.44%, #6e6e6e 123.93%)
+      );
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+  }
+}
+
+//Box contact
+.contact_button {
+  border-radius: 25px;
+  background: var(
+    --Button-Gradient,
+    linear-gradient(193deg, #504a4a -11.44%, #6e6e6e 123.93%)
+  );
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  color: #f3f3f3;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}

@@ -5,10 +5,7 @@
 import { NavLink } from "react-router-dom";
 //Contient les "icon" fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faDiagramProject } from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faDiagramProject } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
@@ -22,40 +19,11 @@ const Header = () => {
         <div className="information_profile">
           <h1>Johan Ternant</h1>
           <h2>Intégrateur Web</h2>
-          <p>ternant.johan@sfr.fr</p>
         </div>
       </div>
 
       <nav className="navigation">
         <ul className="ul_navigation">
-          <div className="link_social">
-            <a
-              href="https://github.com/Johan-Tnt"
-              className="li_navigation contact_button"
-              alt="GitHub"
-              aria-label="Link GitHub"
-            >
-              <FontAwesomeIcon icon={faGithub} size={"xl"} />
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/johan-ternant-064b48313/"
-              className="li_navigation contact_button"
-              alt="Linkedin"
-              aria-label="Link Linkedin"
-            >
-              <FontAwesomeIcon icon={faLinkedin} size={"xl"} />
-            </a>
-
-            <a
-              href="./public/media/CV-Johan-Web.pdf"
-              target="_blank"
-              className="li_navigation contact_button"
-            >
-              CV
-            </a>
-          </div>
-
           <NavLink to="/">
             <FontAwesomeIcon
               icon={faHouse}

@@ -7,13 +7,14 @@
 @use "./slider.scss";
 
 body {
-  font-family: Outfit, Roboto, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-color: #0c0e14;
   color: #fff;
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  //display: flex;
   position: relative;
 }
