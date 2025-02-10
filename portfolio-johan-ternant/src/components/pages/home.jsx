@@ -8,6 +8,7 @@ import {
   faLaptopCode,
   faRocket,
   faChartLine,
+  faTools,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
@@ -31,16 +32,28 @@ const Home = () => {
           </p>
           <p>
             <FontAwesomeIcon icon={faLaptopCode} /> <strong>Langages: </strong>
-            HTML, CSS/Sass, JavaScript.
+            HTML/CSS, Sass, JavaScript.
           </p>
           <p>
             <FontAwesomeIcon icon={faRocket} /> <strong>Frameworks: </strong>
-            React (avec React Router, Redux)
+            React (avec React Router, Redux), Mongo DB.
           </p>
           <p>
             <FontAwesomeIcon icon={faChartLine} />
             <strong>Compétences: </strong>
-            SEO, Optimisation des performances, Responsive design
+            SEO, Optimisation des performances, Responsive design, Accessibilité
+            web, Notion (créatiojn d&apos;un Kanban), Feedly (création d’un
+            système de veille), Réalisation de spécifications techniques.
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faTools} />
+            <strong>Outils: </strong>
+            GitHub, Visual Studio Code, W3C validator, Figma, Code Pen, Slack,
+            Swagger Editor, Postman Agent, Color Contrats Analyser, Wave (web
+            accessibility evaluation tool), Test Ligthouse, Redux DevTools,
+            React Developer Tools, Axe DevTools (web accessibility testing),
+            Minifier, Test des résultats enrichis, GTmetrix, Font Awesome,
+            Aminista, Convertisseur et compresseur des fichiers.
           </p>
         </BentoBox>
 
