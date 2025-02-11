@@ -42,7 +42,7 @@ const Home = () => {
             <FontAwesomeIcon icon={faChartLine} />
             <strong>Compétences: </strong>
             SEO, Optimisation des performances, Responsive design, Accessibilité
-            web, Notion (créatiojn d&apos;un Kanban), Feedly (création d’un
+            web, Notion (création d&apos;un Kanban), Feedly (création d’un
             système de veille), Réalisation de spécifications techniques.
           </p>
           <p>
@@ -72,7 +72,7 @@ const Home = () => {
 
         {/* Bloc dédié au dernier projet réalisé */}
         <BentoBox
-          className="bento-box box-argent-bank"
+          className="bento-box box-last-projects"
           title="Mon dernier projet :"
         >
           <img

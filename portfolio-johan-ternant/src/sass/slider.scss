@@ -27,6 +27,11 @@
   cursor: pointer;
   z-index: 10; // Moins élevé que celui du projects
   border-radius: 3px;
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+  }
 }
 
 .prev-btn {
