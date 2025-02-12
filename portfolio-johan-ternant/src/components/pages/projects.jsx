@@ -1,5 +1,5 @@
 //Code éditer par Johan
-//Contient le menu principal "Home"
+//Contient le menu principal "Projets"
 import Slider from "../slider";
 
 const projects = [
