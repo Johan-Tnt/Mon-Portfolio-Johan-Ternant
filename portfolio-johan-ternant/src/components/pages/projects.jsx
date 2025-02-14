@@ -145,7 +145,7 @@ const Projects = () => {
     <main>
       <section>
         <div className="projects_title">
-          <h2>My Projects</h2>
+          <h2>Mes Projets</h2>
         </div>
         <div className="section_projects">
           {projects.map((project, index) => (

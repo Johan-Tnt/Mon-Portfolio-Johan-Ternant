@@ -25,7 +25,7 @@ const Home = () => {
         </BentoBox>
 
         {/* Bloc compétences et expériences */}
-        <BentoBox className="box-skills" title="Compétences et expériences">
+        <BentoBox className="box-skills" title="Compétences et Expériences">
           <p>
             <FontAwesomeIcon icon={faGraduationCap} />
             <strong>Formation: </strong> Intégrateur Web avec OpenClassrooms
@@ -45,23 +45,34 @@ const Home = () => {
             web, Notion (création d&apos;un Kanban), Feedly (création d’un
             système de veille), Réalisation de spécifications techniques.
           </p>
-          <p>
-            <FontAwesomeIcon icon={faTools} />
-            <strong>Outils: </strong>
-            GitHub, Visual Studio Code, W3C validator, Figma, Code Pen, Slack,
-            Swagger Editor, Postman Agent, Color Contrats Analyser, Wave (web
-            accessibility evaluation tool), Test Ligthouse, Redux DevTools,
-            React Developer Tools, Axe DevTools (web accessibility testing),
-            Minifier, Test des résultats enrichis, GTmetrix, Font Awesome,
-            Aminista, Convertisseur et compresseur des fichiers.
-          </p>
         </BentoBox>
 
         {/* Bloc langues */}
         <BentoBox className="box-languages" title="Langues">
-          <p>🇫🇷 Français - langue maternelle</p>
-          <p>🇬🇧 Anglais - A2</p>
-          <p>🇪🇸 Espagnol - A1</p>
+          <p>
+            <img
+              src="https://flagcdn.com/w40/fr.png"
+              alt="Français"
+              className="flag-icon"
+            />
+            Français - langue maternelle
+          </p>
+          <p>
+            <img
+              src="https://flagcdn.com/w40/gb.png"
+              alt="Anglais"
+              className="flag-icon"
+            />
+            Anglais - A2
+          </p>
+          <p>
+            <img
+              src="https://flagcdn.com/w40/es.png"
+              alt="Espagnol"
+              className="flag-icon"
+            />
+            Espagnol - A1
+          </p>
         </BentoBox>
 
         {/* Bloc des liens sociaux */}
@@ -73,7 +84,7 @@ const Home = () => {
         {/* Bloc dédié au dernier projet réalisé */}
         <BentoBox
           className="bento-box box-last-projects"
-          title="Mon dernier projet :"
+          title="Mon dernier projet"
         >
           <img
             src="./src/assets/img-webp-cp/Argent-Bank-1-new.webp"
@@ -89,6 +100,23 @@ const Home = () => {
           <a href="/projects" className="button-link">
             Voir plus
           </a>
+        </BentoBox>
+
+        {/* Bloc Outils utilisés */}
+        <BentoBox
+          className="box-web-tools"
+          title="Outils de Développement Web utilisés"
+        >
+          <p>
+            <FontAwesomeIcon icon={faTools} />
+            <strong>Outils: </strong>
+            GitHub, Visual Studio Code, W3C validator, Figma, Code Pen, Slack,
+            Swagger Editor, Postman Agent, Color Contrats Analyser, Wave (web
+            accessibility evaluation tool), Test Ligthouse, Redux DevTools,
+            React Developer Tools, Axe DevTools (web accessibility testing),
+            Minifier, Test des résultats enrichis, GTmetrix, Font Awesome,
+            Aminista, Convertisseur et compresseur des fichiers.
+          </p>
         </BentoBox>
       </section>
     </main>

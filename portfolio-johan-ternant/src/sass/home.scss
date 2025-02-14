@@ -16,6 +16,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    margin-top: 50px;
   }
 
   //Box présentation
@@ -27,6 +28,14 @@
   /*.box-languages {
     height: 200px;
   }*/
+
+  .flag-icon {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border-radius: 2px;
+  }
 
   .bento-box,
   .bento-box.box-social {
@@ -60,9 +69,9 @@
 
     .project-image {
       width: 100%;
-      max-width: 400px;
+      //max-width: 400px;
       height: auto;
-      margin-top: 15px;
+      //margin-top: 15px;
     }
 
     .button-link {
@@ -115,6 +124,10 @@
     transform: scale(1.05);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
   }
+}
+
+.box-web-tools {
+  height: auto;
 }
 
 //Media queries
