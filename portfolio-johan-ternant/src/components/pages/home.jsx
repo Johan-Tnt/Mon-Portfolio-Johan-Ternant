@@ -26,59 +26,85 @@ const Home = () => {
 
         {/* Bloc compétences et expériences */}
         <BentoBox className="box-skills" title="Compétences et Expériences">
-          <p>
-            <FontAwesomeIcon icon={faGraduationCap} />
-            <strong>Formation: </strong> Intégrateur Web avec OpenClassrooms
-          </p>
-          <p>
-            <FontAwesomeIcon icon={faLaptopCode} /> <strong>Langages: </strong>
-            HTML/CSS, Sass, JavaScript.
-          </p>
-          <p>
-            <FontAwesomeIcon icon={faRocket} /> <strong>Frameworks: </strong>
-            React (avec React Router, Redux), Mongo DB.
-          </p>
-          <p>
-            <FontAwesomeIcon icon={faChartLine} />
-            <strong>Compétences: </strong>
-            SEO, Optimisation des performances, Responsive design, Accessibilité
-            web, Notion (création d&apos;un Kanban), Feedly (création d’un
-            système de veille), Réalisation de spécifications techniques.
-          </p>
+          <div className="skills-item">
+            <h3>
+              <FontAwesomeIcon icon={faGraduationCap} />
+              <strong>Formation</strong>
+            </h3>
+            <p>Intégrateur Web avec OpenClassrooms</p>
+          </div>
+
+          <div className="skills-item">
+            <h3>
+              <FontAwesomeIcon icon={faLaptopCode} />
+              <strong>Langages</strong>
+            </h3>
+            <p>HTML/CSS, Sass, JavaScript.</p>
+          </div>
+
+          <div className="skills-item">
+            <h3>
+              <FontAwesomeIcon icon={faRocket} /> <strong>Frameworks</strong>
+            </h3>
+            <p>React (avec React Router, Redux), Mongo DB.</p>
+          </div>
+
+          <div className="skills-item">
+            <h3>
+              <FontAwesomeIcon icon={faChartLine} />
+              <strong>Compétences</strong>
+            </h3>
+            <p>
+              SEO, Optimisation des performances, Responsive design,
+              Accessibilité web, Notion (Kanban), Feedly (veille),
+              Spécifications techniques.
+            </p>
+          </div>
         </BentoBox>
 
         {/* Bloc langues */}
         <BentoBox className="box-languages" title="Langues">
-          <p>
-            <img
-              src="https://flagcdn.com/w40/fr.png"
-              alt="Français"
-              className="flag-icon"
-            />
-            Français - langue maternelle
-          </p>
-          <p>
-            <img
-              src="https://flagcdn.com/w40/gb.png"
-              alt="Anglais"
-              className="flag-icon"
-            />
-            Anglais - A2
-          </p>
-          <p>
-            <img
-              src="https://flagcdn.com/w40/es.png"
-              alt="Espagnol"
-              className="flag-icon"
-            />
-            Espagnol - A1
-          </p>
+          <div className="languages-item">
+            <h3>
+              <img
+                src="https://flagcdn.com/w40/fr.png"
+                alt="Français"
+                className="flag-icon"
+              />
+              <strong>Français</strong>
+            </h3>
+            <p>Langue maternelle</p>
+          </div>
+
+          <div className="languages-item">
+            <h3>
+              <img
+                src="https://flagcdn.com/w40/gb.png"
+                alt="Anglais"
+                className="flag-icon"
+              />
+              <strong>Anglais</strong>
+            </h3>
+            <p>Niveau A2</p>
+          </div>
+
+          <div className="languages-item">
+            <h3>
+              <img
+                src="https://flagcdn.com/w40/es.png"
+                alt="Espagnol"
+                className="flag-icon"
+              />
+              <strong>Espagnol</strong>
+            </h3>
+            <p>Niveau A1</p>
+          </div>
         </BentoBox>
 
         {/* Bloc des liens sociaux */}
         <BentoBox className="box-social" title="Contact">
-          <SocialLinks />
           <p>ternant.johan@sfr.fr</p>
+          <SocialLinks />
         </BentoBox>
 
         {/* Bloc dédié au dernier projet réalisé */}
@@ -107,9 +133,11 @@ const Home = () => {
           className="box-web-tools"
           title="Outils de Développement Web utilisés"
         >
-          <p>
+          <h3>
             <FontAwesomeIcon icon={faTools} />
-            <strong>Outils: </strong>
+            <strong>Outils </strong>
+          </h3>
+          <p>
             GitHub, Visual Studio Code, W3C validator, Figma, Code Pen, Slack,
             Swagger Editor, Postman Agent, Color Contrats Analyser, Wave (web
             accessibility evaluation tool), Test Ligthouse, Redux DevTools,

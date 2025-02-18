@@ -176,7 +176,7 @@ const Projects = () => {
               <Slider images={project.images} alt={project.alt} />
               <div className="projects_description">
                 <h3>{project.title}</h3>
-                <p>{project.description}</p>
+                <p className="button_projects_lf">{project.description}</p>
               </div>
             </div>
           ))}

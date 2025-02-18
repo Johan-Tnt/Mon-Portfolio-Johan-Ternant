@@ -59,3 +59,41 @@
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
   }
 }
+
+//Boutons de couleur pour langages et frameworks utilisés lors des projets
+.button_projects_lf {
+  display: flex;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px 20px;
+  flex-direction: row;
+  background: var(
+    --Button-Gradient,
+    linear-gradient(193deg, #504a4a -11.44%, #6e6e6e 123.93%)
+  );
+}
+.button_1 {
+  background-color: yellow;
+}
+.button_2 {
+  background-color: red;
+}
+.button_3 {
+  background-color: green;
+}
+.button_4 {
+  background-color: cornflowerblue;
+}
+.button_5 {
+  background-color: blueviolet;
+}
+
+//Media queries
+@media (min-width: 768px) {
+  .button_link_projects {
+    right: 15px;
+    bottom: 50px;
+    left: auto;
+    top: auto;
+  }
+}
