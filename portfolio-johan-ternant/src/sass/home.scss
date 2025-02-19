@@ -25,8 +25,8 @@
   }*/
 
   /*.box-skills {
-    grid-column: span 2; //Exemple pour que cette boîte occupe deux colonnes 
-  grid-row: span 2; //Et occupe deux lignes 
+    //grid-column: span 2; //Exemple pour que cette boîte occupe deux colonnes
+    grid-row: span 2; //Et occupe deux lignes
   }*/
 
   .box-languages {
@@ -44,10 +44,11 @@
     grid-row: span 2; //Cette boîte prend plus de place
   }
 
-  /*.box-web-tools {
+  .box-web-tools {
     //grid-column: span 2;
-    grid-row: span 1;
-  }*/
+    //grid-row: span 1;
+    height: auto;
+  }
 
   //Contient le tableau de la Box Compétences et Expériences
   .skills-item {
@@ -174,11 +175,6 @@
   }
 }
 
-//Box Outils Web Utilisés
-.box-web-tools {
-  height: auto;
-}
-
 //Media queries
 @media (max-width: 320px) {
   .home {
@@ -218,6 +214,7 @@
 
     .box-last-projects {
       grid-column: span 1; //Cette boîte occupe une seule colonne
+      grid-row: span 1;
     }
 
     .skills-item,
@@ -250,8 +247,16 @@
     grid-column: span 2; //Cette boîte occupe deux colonnes
   }
 
+  .box-skills {
+    grid-row: span 2; //Et occupe deux lignes
+  }
+
   .box-last-projects {
     grid-column: span 2; //Elle reste grande sur tablette
+  }
+
+  .box-web-tools {
+    grid-column: span 2;
   }
 
   .skills-item,
