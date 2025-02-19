@@ -5,7 +5,9 @@ import Slider from "../slider";
 const projects = [
   {
     title: "Mon Portfolio",
-    description: "Frontend, React, React Router, Sass",
+    description:
+      "Développement de mon site portfolio mettant en avant mes compétences et mes projets.",
+    tags: ["Frontend", "React", "React Router", "Sass"],
     images: [
       "./src/assets/img-jpg-cp/Mon-Portfolio-1.png",
       "./src/assets/img-jpg-cp/Mon-Portfolio-2.png",
@@ -15,7 +17,9 @@ const projects = [
   },
   {
     title: "Argent Bank",
-    description: "Frontend, Backend, React, React Router, Redux, Sass",
+    description:
+      "Application bancaire avec authentification, gestion des transactions et communication avec une API REST.",
+    tags: ["Frontend", "Backend", "React", "React Router", "Redux", "Sass"],
     images: [
       "./src/assets/img-webp-cp/Argent-Bank-1-new.webp",
       "./src/assets/img-webp-cp/Argent-Bank-2-new.webp",
@@ -30,7 +34,9 @@ const projects = [
   },
   {
     title: "724events",
-    description: "Frontend, React dev Tools",
+    description:
+      "Débogage et optimisation d’une application de gestion d’événements.",
+    tags: ["Frontend", "React Dev Tools"],
     images: [
       "./src/assets/img-webp-cp/724Events-1-new.webp",
       "./src/assets/img-webp-cp/724Events-2-new.webp",
@@ -46,7 +52,16 @@ const projects = [
   {
     title: "Nina Carducci",
     description:
-      "Frontend, Minifier, Audit Light House, Contrast Analyser, Wave, Test with enriched results",
+      "Optimisation des performances et de l'accessibilité d’un site de photographe professionnel.",
+    tags: [
+      "Frontend",
+      "Minifier",
+      "SEO",
+      "Audit Light House",
+      "Wave",
+      "Contrast Analyser",
+      "Test with enriched results",
+    ],
     images: [
       "./src/assets/img-webp-cp/Nina-Carducci-1-new.webp",
       "./src/assets/img-webp-cp/Nina-Carducci-2-new.webp",
@@ -61,7 +76,9 @@ const projects = [
   },
   {
     title: "Kasa",
-    description: "Frontend, Backend, React, React Router, Sass",
+    description:
+      "Plateforme de location immobilière avec affichage dynamique des annonces.",
+    tags: ["Frontend", "Backend", "React", "React Router", "Sass"],
     images: [
       "./src/assets/img-webp-cp/Kasa-1-new.webp",
       "./src/assets/img-webp-cp/Kasa-2-new.webp",
@@ -75,7 +92,14 @@ const projects = [
   {
     title: "Menu Maker",
     description:
-      "Frontend, Backend, Technical specifications, Kanban with Notion, Veille with Feedly",
+      "Création d’un outil de gestion de menus avec suivi des spécifications techniques et méthode Agile.",
+    tags: [
+      "Frontend",
+      "Backend",
+      "Technical specifications",
+      "Kanban",
+      "Veille",
+    ],
     images: [
       "./src/assets/img-webp-cp/Menu-Maker-1-new.webp",
       "./src/assets/img-webp-cp/Menu-Maker-2-new.webp",
@@ -101,7 +125,9 @@ const projects = [
   },
   {
     title: "Sophie Bluel",
-    description: "Frontend, Backend, JavaScript, HTML, CSS",
+    description:
+      "Création d’un site dynamique pour une architecte d’intérieur.",
+    tags: ["Frontend", "Backend", "JavaScript", "HTML", "CSS"],
     images: [
       "./src/assets/img-webp-cp/Sophie-Bluel-1-new.webp",
       "./src/assets/img-webp-cp/Sophie-Bluel-2-new.webp",
@@ -117,7 +143,9 @@ const projects = [
   },
   {
     title: "OhMyFood",
-    description: "Frontend, HTML, Sass",
+    description:
+      "Développement d’un site mobile-first pour des restaurants, avec animations CSS.",
+    tags: ["Frontend", "HTML", "Sass"],
     images: [
       "./src/assets/img-webp-cp/OhMyFood-1-new.webp",
       "./src/assets/img-webp-cp/OhMyFood-2-new.webp",
@@ -130,7 +158,8 @@ const projects = [
   },
   {
     title: "Booki",
-    description: "Frontend, HTML, CSS",
+    description: "Développement d’un site desktop-first pour un hôtel.",
+    tags: ["Frontend", "HTML", "CSS"],
     images: [
       "./src/assets/img-webp-cp/Booki-1-new.webp",
       "./src/assets/img-webp-cp/Booki-2-new.webp",
@@ -139,6 +168,31 @@ const projects = [
     githubLink: "",
   },
 ];
+
+{
+  /* Bloc des Tags et de leur couleur */
+}
+const tagColors = {
+  Frontend: "#38863C", //Vert foncé
+  Backend: "#B22222", //Rouge foncé
+  HTML: "#E65100", //Orange foncé
+  CSS: "#A32880", //Rose foncé
+  Sass: "#A32880", //Rose foncé
+  React: "#005CB1", //Bleu foncé
+  "React Router": "#005CB1", //Bleu foncé
+  Redux: "#005CB1", //Bleu foncé
+  "React Dev Tools": "#005CB1", //Bleu foncé
+  JavaScript: "#C99700", //Jaune foncé
+  Kanban: "#38863C", //Vert foncé
+  Veille: "#A32880", //Rose foncé
+  SEO: "#767275", //Gris foncé
+  Minifier: "#767275", //Gris foncé
+  "Audit Light House": "#767275", //Gris foncé
+  "Contrast Analyser": "#767275", //Gris foncé
+  Wave: "#767275", //Gris foncé
+  "Résultats Enrichis": "##767275", //Gris foncé
+  "Spécifications Techniques": "#767275", //Gris foncé
+};
 
 const Projects = () => {
   return (
@@ -177,6 +231,24 @@ const Projects = () => {
               <div className="projects_description">
                 <h3>{project.title}</h3>
                 <p className="button_projects_lf">{project.description}</p>
+                <div className="tags_container">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="tag"
+                      style={{
+                        border: `2px solid ${tagColors[tag] || "grey"}`,
+                        color: tagColors[tag] || "grey",
+                        padding: "0.5rem",
+                        margin: "0.2rem",
+                        borderRadius: "4px",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
