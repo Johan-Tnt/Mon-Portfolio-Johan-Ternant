@@ -4,12 +4,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .projects_title {
   display: flex;
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: black;
+  padding: 20px;
 }
 .button_projects {
   text-decoration: none;
@@ -48,11 +55,12 @@
   justify-content: center;
   color: white;
   font-size: 14px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  //position: absolute;
+  //top: 10px;
+  //left: 10px;
   z-index: 20; // Plus élevé que celui du slider
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  margin-right: 15px;
 
   &:hover {
     transform: scale(1.05);
@@ -61,29 +69,39 @@
 }
 
 //Boutons de couleur pour langages et frameworks utilisés lors des projets
-.tags_container {
+.projet-footer-container {
+  display: flex;
+  align-items: center;
+  //justify-content: space-between;
+  //margin-top: 10px;
+  //gap: 10px;
+}
+
+.project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  flex: 1; // Pour occuper toute la largeur dispo
+  padding: 0;
+  list-style: none;
 }
 
 .tag {
   padding: 5px 10px;
+  border: 2px solid;
   border-radius: 8px;
   font-size: 14px;
   font-weight: bold;
-  color: white;
-  display: inline-block;
+  //color: white;
+  //display: inline-block;
 }
 
 //Media queries
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .button_link_projects {
     right: 15px;
     bottom: 50px;
     left: auto;
     top: auto;
   }
-}
+}*/

@@ -138,12 +138,9 @@ const Home = () => {
             <strong>Outils </strong>
           </h3>
           <p>
-            GitHub, Visual Studio Code, W3C validator, Figma, Code Pen, Slack,
-            Swagger Editor, Postman Agent, Color Contrats Analyser, Wave (web
-            accessibility evaluation tool), Test Ligthouse, Redux DevTools,
-            React Developer Tools, Axe DevTools (web accessibility testing),
-            Minifier, Test des résultats enrichis, GTmetrix, Font Awesome,
-            Aminista, Convertisseur et compresseur des fichiers.
+            GitHub, Figma, Swagger Editor, Postman Agent, Web accessibility Test
+            Ligthouse, React Tools, Test des résultats enrichis, GTmetrix,
+            Convertisseur et compresseur des fichiers.
           </p>
         </BentoBox>
       </section>

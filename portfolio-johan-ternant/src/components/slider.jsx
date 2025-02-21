@@ -1,10 +1,11 @@
 //Code éditer par Johan
+//Contient le "Slider" des "Projets"
 import { useState } from "react"; //useState pour la gestion des états
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 /* eslint-disable react/prop-types */
 
-const Slider = ({ images, alt }) => {
+const Slider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -21,15 +22,23 @@ const Slider = ({ images, alt }) => {
 
   return (
     <div className="slider">
-      <button onClick={prevSlide} className="slider-btn prev-btn">
+      <button
+        onClick={prevSlide}
+        className="slider-btn prev-btn"
+        aria-label="Previous slide"
+      >
         <FontAwesomeIcon icon={faArrowLeft} />
       </button>
       <img
-        src={images[currentIndex]}
-        alt={`${alt} - Slide ${currentIndex + 1}`}
+        src={images[currentIndex].src} // Accéder à src dans l'objet image
+        alt={images[currentIndex].alt} // Accéder à alt dans l'objet image
         className="slider-image"
       />
-      <button onClick={nextSlide} className="slider-btn next-btn">
+      <button
+        onClick={nextSlide}
+        className="slider-btn next-btn"
+        aria-label="Next slide"
+      >
         <FontAwesomeIcon icon={faArrowRight} />
       </button>
     </div>

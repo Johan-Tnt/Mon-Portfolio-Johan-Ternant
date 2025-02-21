@@ -2,17 +2,17 @@
 //Code principal du menu "home"
 
 .home {
-  padding: 2rem 1rem;
+  //padding: 2rem 1rem;
+  padding: 1rem 0.5rem;
 
   //Content la mise en page des boites Bento avec "display grid"
   .bento-grid {
     display: grid;
     //grid-template-columns: 1fr;
     //gap: 1.5rem;
-    margin-top: 50px;
+    //margin-top: 50px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: repeat(3, auto);
-    //gap: 20px;
     gap: 30px;
     padding: 20px;
   }
@@ -234,7 +234,8 @@
       2,
       1fr
     ); //Disposition à 2 colonnes pour les tablettes
-    gap: 20px;
+    //gap: 20px
+    gap: 30px;
   }
 
   .box-presentation {
