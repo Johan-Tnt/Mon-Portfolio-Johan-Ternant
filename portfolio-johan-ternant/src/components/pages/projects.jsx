@@ -307,7 +307,7 @@ const projects = [
     githubLink:
       "https://github.com/Johan-Tnt/Ternant_Johan_n_4_Am-liorez_l_interface_d_un_site_mobile_avec_des_animations_CSS_27_11_2023",
   },
-
+  /*{
   {
     title: "Booki",
     description: "Développement d’un site desktop-first pour un hôtel.",
@@ -324,11 +324,10 @@ const projects = [
     ],
     githubLink: "",
   },
+  }*/
 ];
 
-{
-  /* Bloc des Tags et de leur couleur */
-}
+/*{ Bloc des Tags et de leur couleur }*/
 const tagColors = {
   Frontend: "#38863C", //Vert foncé
   Backend: "#B22222", //Rouge foncé

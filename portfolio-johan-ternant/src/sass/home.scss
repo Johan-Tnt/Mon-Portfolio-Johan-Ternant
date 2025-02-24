@@ -1,53 +1,19 @@
 //Code éditer par Johan
 //Code principal du menu "home"
-
 .home {
-  //padding: 2rem 1rem;
   padding: 1rem 0.5rem;
 
   //Content la mise en page des boites Bento avec "display grid"
   .bento-grid {
     display: grid;
-    //grid-template-columns: 1fr;
-    //gap: 1.5rem;
-    //margin-top: 50px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows: repeat(3, auto);
-    gap: 30px;
-    padding: 20px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
   }
-
   .bento-box {
     border: 1px solid #ccc;
-  }
-  /*.box-presentation {
-    grid-column: span 2; //Exemple pour que cette boîte occupe deux colonnes 
-  }*/
-
-  /*.box-skills {
-    //grid-column: span 2; //Exemple pour que cette boîte occupe deux colonnes
-    grid-row: span 2; //Et occupe deux lignes
-  }*/
-
-  .box-languages {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
-  .box-social {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
-  .box-last-projects {
-    grid-column: span 2;
-    grid-row: span 2; //Cette boîte prend plus de place
-  }
-
-  .box-web-tools {
-    //grid-column: span 2;
-    //grid-row: span 1;
-    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   //Contient le tableau de la Box Compétences et Expériences
@@ -55,14 +21,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
   .skills-item h3 {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
-
   .skills-item p {
     font-style: italic;
   }
@@ -75,18 +39,16 @@
     border-radius: 2px;
     height: auto;
   }
-
   .languages-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
   .languages-item h3 {
     display: flex;
     align-items: center;
-    font-size: 1.1rem;
+    gap: 0.5rem;
+    font-size: 1rem;
   }
-
   .languages-item p {
     margin-top: 20px;
     font-style: italic;
@@ -151,11 +113,6 @@
 //Box Contact
 .contact_button {
   display: flex;
-  /*background: var(
-    --Button-Gradient,
-    linear-gradient(193deg, #504a4a -11.44%, #6e6e6e 123.93%)
-  );*/
-  //box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background: linear-gradient(193deg, #6e6e6e, #504a4a);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
   border-radius: 50%;
@@ -175,12 +132,32 @@
   }
 }
 
-//Media queries
-@media (max-width: 320px) {
-  .home {
-    .skills-grid {
-      display: block;
-    }
+//Media Queries "Mobile first"
+//Contient la mise en page visuel du Bento Design
+@media (min-width: 768px) {
+  .home .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .box-presentation {
+    grid-column: span 2;
+  }
+  .box-skills {
+    grid-row: span 3;
+  }
+  .box-last-projects {
+    grid-column: span 2;
+  }
+  .box-social {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .box-web-tools {
+    grid-column: span 2;
+  }
+  .box-languages {
+    grid-column: span 1;
+    grid-row: span 1;
   }
 }
 
@@ -188,83 +165,39 @@
   .home .bento-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-@media (max-width: 768px) {
-  .home {
-    .bento-grid {
-      grid-template-columns: 1fr; //Pour les petits écrans, on passe en une seule colonne
-      gap: 20px;
-      padding: 10px; //Réduction du padding pour les écrans plus petits
-    }
-
-    .box-presentation {
-      grid-column: span 1; //Cette boîte occupe toute la largeur
-    }
-
-    .box-skills {
-      grid-column: span 1;
-    }
-
-    .box-last-projects {
-      grid-column: span 1; //Cette boîte occupe une seule colonne
-      grid-row: span 1;
-    }
-
-    .skills-item,
-    .languages-item {
-      grid-template-columns: 1fr; //Les tableaux deviennent une seule colonne
-    }
-
-    .skills-item h3,
-    .languages-item h3 {
-      font-size: 1rem; //Réduction de la taille des titres pour les petits écrans
-    }
-
-    .button-link {
-      width: 90%; //Le bouton devient plus large sur les petits écrans
-      padding: 10px;
-    }
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .home .bento-grid {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); //Disposition à 2 colonnes pour les tablettes
-    //gap: 20px
-    gap: 30px;
-  }
-
   .box-presentation {
-    grid-column: span 2; //Cette boîte occupe deux colonnes
+    grid-column: span 3;
+    grid-row: span 3;
   }
-
   .box-skills {
-    grid-row: span 2; //Et occupe deux lignes
-  }
-
-  .box-last-projects {
-    grid-column: span 2; //Elle reste grande sur tablette
-  }
-
-  .box-web-tools {
+    grid-row: span 2;
     grid-column: span 2;
   }
-
-  .skills-item,
-  .languages-item {
-    grid-template-columns: 1fr 1fr; //Le tableau devient 2 colonnes sur tablette
+  .box-last-projects {
+    grid-column: span 3;
   }
-
-  .skills-item h3,
-  .languages-item h3 {
-    font-size: 1.2rem; //Légère augmentation de la taille des titres
+  .home .box-social {
+    grid-row: span 1;
   }
+  .box-web-tools {
+    grid-column: span 3;
+  }
+}
 
-  .button-link {
-    width: auto; //Le bouton reprend sa largeur naturelle
+@media (min-width: 1440px) {
+  .box-presentation {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .box-skills {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  .box-last-projects {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  .box-web-tools {
+    grid-column: span 1;
   }
 }
