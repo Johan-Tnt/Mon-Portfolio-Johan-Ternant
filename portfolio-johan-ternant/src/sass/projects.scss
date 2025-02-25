@@ -8,7 +8,7 @@
 }*/
 .section_projects {
   display: grid;
-  grid-template-columns: 1fr; // Mobile : une seule colonne
+  grid-template-columns: 1fr; //Mobile : une seule colonne
   gap: 25px;
   margin-bottom: 20px;
   padding: 20px;
@@ -25,8 +25,8 @@
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 20px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
   background-color: black;
   padding: 20px;
 }
@@ -53,12 +53,6 @@
   padding: 5px;
   //display: flex;
   //flex-direction: column;
-}
-.img_projects {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
 }
 .projects_description {
   padding-left: 15px;

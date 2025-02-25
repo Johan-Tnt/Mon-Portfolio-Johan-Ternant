@@ -6,8 +6,8 @@
   border: 1px solid #ccc;
   border-radius: 20px;
   margin-top: 30px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
   height: 420px;
   justify-content: center;
 }
@@ -79,8 +79,7 @@
   }
   .ul_navigation {
     flex-direction: initial;
-    margin-top: 0;
-    margin-right: 0;
+    margin: 20px;
   }
   .profile_dev {
     display: flex;
@@ -91,7 +90,7 @@
   .img_johan {
     position: initial;
     left: 0;
-    margin: 20px;
+    margin: 30px;
   }
   .information_profile {
     margin-left: 10px;

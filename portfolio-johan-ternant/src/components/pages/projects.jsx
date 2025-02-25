@@ -329,25 +329,25 @@ const projects = [
 
 /*{ Bloc des Tags et de leur couleur }*/
 const tagColors = {
-  Frontend: "#38863C", //Vert foncé
-  Backend: "#B22222", //Rouge foncé
-  HTML: "#E65100", //Orange foncé
-  CSS: "#A32880", //Rose foncé
-  Sass: "#A32880", //Rose foncé
-  React: "#005CB1", //Bleu foncé
-  "React Router": "#005CB1", //Bleu foncé
-  Redux: "#005CB1", //Bleu foncé
-  "React Dev Tools": "#005CB1", //Bleu foncé
-  JavaScript: "#C99700", //Jaune foncé
-  Kanban: "#38863C", //Vert foncé
-  Veille: "#A32880", //Rose foncé
-  SEO: "#767275", //Gris foncé
-  Minifier: "#767275", //Gris foncé
-  "Audit Light House": "#767275", //Gris foncé
-  "Contrast Analyser": "#767275", //Gris foncé
-  Wave: "#767275", //Gris foncé
-  "Résultats Enrichis": "##767275", //Gris foncé
-  "Spécifications Techniques": "#767275", //Gris foncé
+  Frontend: "#2C5E3C", //Vert foncé
+  Backend: "#922222", //Rouge foncé
+  HTML: "#7F4000", //Orange foncé
+  CSS: "#892880", //Rose foncé
+  Sass: "#892880", //Rose foncé
+  React: "#005c8b", //Bleu foncé
+  "React Router": "#005c8b", //Bleu foncé
+  Redux: "#005c8b", //Bleu foncé
+  "React Dev Tools": "#005c8b", //Bleu foncé
+  JavaScript: "#595b00", //Jaune foncé
+  Kanban: "#2C5E3C", //Vert foncé
+  Veille: "#892880", //Rose foncé
+  SEO: "#555858", //Gris foncé
+  Minifier: "#555858", //Gris foncé
+  "Audit Light House": "#555858", //Gris foncé
+  "Contrast Analyser": "#555858", //Gris foncé
+  Wave: "#555858", //Gris foncé
+  "Résultats Enrichis": "#555858", //Gris foncé
+  "Spécifications Techniques": "#555858", //Gris foncé
 };
 
 const Projects = () => {
