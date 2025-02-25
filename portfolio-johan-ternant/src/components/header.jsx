@@ -24,22 +24,26 @@ const Header = () => {
 
       <nav className="navigation">
         <ul className="ul_navigation">
-          <NavLink to="/">
-            <FontAwesomeIcon
-              icon={faHouse}
-              style={{ color: "white" }}
-              className="icon_header"
-            />
-            <li className="li_navigation"> Home </li>
-          </NavLink>
-          <NavLink to="/projects">
-            <FontAwesomeIcon
-              icon={faDiagramProject}
-              style={{ color: "white" }}
-              className="icon_header"
-            />
-            <li className="li_navigation"> Projects </li>
-          </NavLink>
+          <li className="li_navigation">
+            <NavLink to="/">
+              <FontAwesomeIcon
+                icon={faHouse}
+                style={{ color: "white" }}
+                className="icon_header"
+              />
+              Home
+            </NavLink>
+          </li>
+          <li className="li_navigation">
+            <NavLink to="/projects">
+              <FontAwesomeIcon
+                icon={faDiagramProject}
+                style={{ color: "white" }}
+                className="icon_header"
+              />
+              Projects
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </div>
