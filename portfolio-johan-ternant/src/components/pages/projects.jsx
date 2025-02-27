@@ -159,7 +159,7 @@ const projects = [
   {
     title: "Menu Maker",
     description:
-      "Création d’un outil de gestion de menus avec suivi des spécifications techniques et méthode Agile.",
+      "Direction de projet d’un outil de gestion de menus ; suivi des spécifications techniques et utilisation de la méthode Agile.",
     tags: [
       "Frontend",
       "Backend",
@@ -170,77 +170,46 @@ const projects = [
     images: [
       {
         src: "./src/assets/img-webp-cp/Menu-Maker-1-new.webp",
-        alt: "Interface principale de l'outil Menu Maker",
+        alt: "Tableau de bord principal de Menu Maker avec aperçu des fonctionnalités clés.",
       },
       {
         src: "./src/assets/img-webp-cp/Menu-Maker-2-new.webp",
-        alt: "Page de gestion des menus sur Menu Maker",
+        alt: "Interface de gestion des menus, affichant une liste organisée avec options d'édition.",
       },
       {
         src: "./src/assets/img-webp-cp/Menu-Maker-3-new.webp",
-        alt: "Ajout d'un nouveau menu dans Menu Maker",
+        alt: "Formulaire interactif permettant d'ajouter un nouveau menu personnalisé.",
       },
       {
         src: "./src/assets/img-webp-cp/Menu-Maker-4-new.webp",
-        alt: "Interface de suivi des spécifications techniques",
+        alt: "Vue détaillée des spécifications techniques d'un menu en cours de création.",
       },
       {
         src: "./src/assets/img-webp-cp/Menu-Maker-5-new.webp",
-        alt: "Suivi Kanban des tâches dans Menu Maker",
+        alt: "Tableau Kanban de gestion des tâches et du workflow sur Menu Maker.",
       },
       {
         src: "./src/assets/img-webp-cp/Menu-Maker-6-new.webp",
-        alt: "Page de gestion des commandes sur Menu Maker",
+        alt: "Module de gestion des commandes avec suivi des statuts et détails des transactions.",
       },
       {
         src: "./src/assets/img-webp-cp/Menu-Maker-7-new.webp",
-        alt: "Visualisation des statistiques de menus dans Menu Maker",
+        alt: "Dashboard d'analyse affichant les statistiques de performance des menus.",
       },
       {
         src: "./src/assets/img-webp-cp/Menu-Maker-8-new.webp",
-        alt: "Gestion des préférences d'utilisateur sur Menu Maker",
+        alt: "Interface de personnalisation des préférences utilisateur et des réglages de Menu Maker.",
       },
       {
         src: "./src/assets/img-webp-cp/Menu-Maker-9-new.webp",
-        alt: "Téléchargement des fichiers depuis Menu Maker",
+        alt: "Section de téléchargement et gestion des fichiers associés aux menus.",
       },
       {
         src: "./src/assets/img-webp-cp/Menu-Maker-10-new.webp",
-        alt: "Écran d'édition des spécifications d'un menu",
-      },
-      {
-        src: "./src/assets/img-webp-cp/Menu-Maker-11-new.webp",
-        alt: "Vue sur l'interface de planification des menus",
-      },
-      {
-        src: "./src/assets/img-webp-cp/Menu-Maker-12-new.webp",
-        alt: "Page d'exportation des données dans Menu Maker",
-      },
-      {
-        src: "./src/assets/img-webp-cp/Menu-Maker-13-new.webp",
-        alt: "Interface de modification d'un menu existant",
-      },
-      {
-        src: "./src/assets/img-webp-cp/Menu-Maker-14-new.webp",
-        alt: "Écran de validation des menus dans Menu Maker",
-      },
-      {
-        src: "./src/assets/img-webp-cp/Menu-Maker-15-new.webp",
-        alt: "Vue de l'interface de révision des spécifications",
-      },
-      {
-        src: "./src/assets/img-webp-cp/Menu-Maker-16-new.webp",
-        alt: "Suivi des tâches de développement dans Menu Maker",
-      },
-      {
-        src: "./src/assets/img-webp-cp/Menu-Maker-17-new.webp",
-        alt: "Vue détaillée des menus dans Menu Maker",
-      },
-      {
-        src: "./src/assets/img-webp-cp/Menu-Maker-18-new.webp",
-        alt: "Page de gestion des utilisateurs dans Menu Maker",
+        alt: "Éditeur avancé pour modifier les spécifications détaillées d'un menu.",
       },
     ],
+
     folderLink: "./public/menu-maker/menu-maker.zip",
   },
   {
@@ -368,7 +337,7 @@ const Projects = () => {
               />
               <div className="projects_description">
                 <h3>{project.title}</h3>
-                <p className="button_projects_lf">{project.description}</p>
+                <p>{project.description}</p>
                 <aside className="projet-footer-container">
                   <ul className="project-tags">
                     {project.tags.map((tag) => (
@@ -384,7 +353,7 @@ const Projects = () => {
                   {project.githubLink && (
                     <a
                       href={project.githubLink}
-                      className="button_projects button_link_projects"
+                      className="button_link_projects"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

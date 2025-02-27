@@ -30,8 +30,8 @@ const Slider = ({ images }) => {
         <FontAwesomeIcon icon={faArrowLeft} />
       </button>
       <img
-        src={images[currentIndex].src} // Accéder à src dans l'objet image
-        alt={images[currentIndex].alt} // Accéder à alt dans l'objet image
+        src={images[currentIndex].src} //Accède à src dans l'objet image
+        alt={images[currentIndex].alt} //Accède à alt dans l'objet image
         className="slider-image"
       />
       <button
