@@ -9,6 +9,9 @@ import {
   faRocket,
   faChartLine,
   faTools,
+  faFileAlt,
+  faBullhorn,
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
@@ -18,10 +21,27 @@ const Home = () => {
         {/* Bloc de présentation */}
         <BentoBox className="box-presentation" title="Bonjour, c'est Johan">
           <p>
+            Passionné par le web, le design et les expériences interactives ✨
+          </p>
+          <p>
             En cliquant sur <span className="bold">Projects</span>, vous pourrez
             découvrir quelques projets sur lesquels j’ai travaillé, ou sur
             lesquels je suis actuellement.
           </p>
+          <img
+            src="./src/assets/img-webp-cp/Portfolio-presentation-new.webp"
+            alt=""
+          />
+          <blockquote className="quote">
+            夢は叶うものではなく、叶えるもの
+            <footer>
+              <span>(Yume wa kanau mono de wa naku, kanaeru mono)</span>
+            </footer>
+          </blockquote>
+          <span className="translation">
+            &quot;Les rêves ne sont pas des choses qui se réalisent, ce sont des
+            choses qui peuvent se réaliser.&quot;
+          </span>
         </BentoBox>
 
         {/* Bloc compétences et expériences */}
@@ -46,7 +66,7 @@ const Home = () => {
             <h3>
               <FontAwesomeIcon icon={faRocket} /> <strong>Frameworks</strong>
             </h3>
-            <p>React (avec React Router, Redux), Mongo DB.</p>
+            <p>React (avec React Router, Redux).</p>
           </div>
 
           <div className="skills-item">
@@ -103,7 +123,11 @@ const Home = () => {
 
         {/* Bloc des liens sociaux */}
         <BentoBox className="box-social" title="Contact">
-          <p>ternant.johan@sfr.fr</p>
+          <p>
+            <FontAwesomeIcon icon={faEnvelope} className="" />
+            <a href="mailto:ternant.johan@sfr.fr">ternant.johan@sfr.fr</a>
+          </p>
+
           <SocialLinks />
         </BentoBox>
 
@@ -115,7 +139,6 @@ const Home = () => {
           <img
             src="./src/assets/img-webp-cp/Argent-Bank-1-new.webp"
             alt="Argent Bank Project Preview"
-            className="project-image"
           />
           <p>
             Découvrez mon projet <strong>Argent Bank</strong>, une application
@@ -131,17 +154,37 @@ const Home = () => {
         {/* Bloc Outils utilisés */}
         <BentoBox
           className="box-web-tools"
-          title="Outils de Développement Web utilisés"
+          title="Outils de Développement et de Productivité"
         >
-          <h3>
-            <FontAwesomeIcon icon={faTools} />
-            <strong>Outils </strong>
-          </h3>
-          <p>
-            GitHub, Figma, Swagger Editor, Postman Agent, Web accessibility Test
-            Ligthouse, React Tools, Test des résultats enrichis, GTmetrix,
-            Convertisseur et compresseur des fichiers.
-          </p>
+          <div className="tools-container">
+            <div>
+              <h3>
+                <FontAwesomeIcon icon={faTools} />
+                <strong>Outils</strong>
+              </h3>
+              <p>
+                GitHub, Figma, Visual Studio Code, Swagger Editor, Postman
+                Agent, Web accessibility, Test Lighthouse, React Tools, Test des
+                résultats enrichis, Convertisseur et compresseur des fichiers.
+              </p>
+            </div>
+
+            <div>
+              <h3>
+                <FontAwesomeIcon icon={faFileAlt} />
+                <strong>Bureautique</strong>
+              </h3>
+              <p>PowerPoint, Word, Exel, Canva, Snappa.</p>
+            </div>
+
+            <div>
+              <h3>
+                <FontAwesomeIcon icon={faBullhorn} />
+                <strong>Marketing</strong>
+              </h3>
+              <p>YouTube Studios, Recherche mots clés/Hashtags.</p>
+            </div>
+          </div>
         </BentoBox>
       </section>
     </main>

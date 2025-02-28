@@ -1,9 +1,6 @@
 //Code éditer par Johan
 
 .section_projects {
-  //display: flex;
-  //flex-wrap: wrap;
-  //justify-content: center;
   display: grid;
   grid-template-columns: 1fr; //Mobile : une seule colonne
   gap: 25px;
@@ -12,6 +9,9 @@
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr); //Tablette et desktop : deux colonnes
+  }
+  p {
+    line-height: 1.4;
   }
 }
 
@@ -29,17 +29,11 @@
 }
 
 .list_projects {
-  //background-color: #181818;
-  //max-width: 1440px;
-  //width: 92%;
-  //position: relative;
   background-color: black;
   border-radius: 20px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border: solid 1px #ccc;
   padding: 5px;
-  //display: flex;
-  //flex-direction: column;
 }
 .projects_description {
   padding-left: 15px;
@@ -57,9 +51,6 @@
   justify-content: center;
   color: white;
   font-size: 14px;
-  //position: absolute;
-  //top: 10px;
-  //left: 10px;
   z-index: 20; //Plus élevé que celui du slider
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   margin-right: 15px;
@@ -75,9 +66,7 @@
 .projet-footer-container {
   display: flex;
   align-items: center;
-  //justify-content: space-between;
-  //margin-top: 10px;
-  //gap: 10px;
+  gap: 1rem;
 }
 
 .project-tags {
@@ -94,6 +83,4 @@
   border-radius: 8px;
   font-size: 14px;
   font-weight: bold;
-  //color: white;
-  //display: inline-block;
 }

@@ -16,10 +16,28 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
+  //Box Presentation
+  .box-presentation {
+    p {
+      line-height: 1.4;
+    }
+    .quote {
+      font-family: "Kozuka Mincho Pro", serif; //Une police qui rappelle l'esthétique japonaise.
+      font-style: italic;
+      text-align: center;
+    }
+
+    .translation {
+      display: flex;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      line-height: 1.4;
+    }
+  }
+
   //Contient le tableau de la Box Compétences et Expériences
   .skills-item {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
   }
   .skills-item h3 {
     display: flex;
@@ -29,6 +47,7 @@
   }
   .skills-item p {
     font-style: italic;
+    line-height: 1.4;
   }
 
   //Contient le tableau de la Box Languages
@@ -42,6 +61,7 @@
   .languages-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    text-align: center;
   }
   .languages-item h3 {
     display: flex;
@@ -73,6 +93,30 @@
       display: flex;
       gap: 1rem;
     }
+    p {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  .contact_button {
+    display: flex;
+    background: linear-gradient(193deg, #6e6e6e, #504a4a);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    color: #f3f3f3;
+    font-size: 1.5rem;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+    }
   }
 
   //Box Dernier Projets
@@ -80,12 +124,6 @@
     padding: 20px;
     text-align: left;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
-    .project-image {
-      width: 100%;
-      height: auto;
-    }
 
     .button-link {
       display: block;
@@ -106,32 +144,34 @@
         transform: scale(1.05);
       }
     }
+    p {
+      line-height: 1.4;
+    }
   }
 }
 
-//Box Contact
-.contact_button {
-  display: flex;
-  background: linear-gradient(193deg, #6e6e6e, #504a4a);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  color: #f3f3f3;
-  font-size: 1.5rem;
-  padding: 12px;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  align-items: center;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+//Box des outils utilisés
+.box-web-tools {
+  .tools-container {
+    display: block;
 
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+    h3 {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.4;
+      font-style: italic;
+    }
   }
 }
 
 //Media Queries "Mobile first"
-//Contient la mise en page visuel du Bento Design
+//Contient la mise en page visuelle du Bento Design Tablette et desktop
 @media (min-width: 768px) {
   .home .bento-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -142,6 +182,11 @@
   }
   .box-skills {
     grid-row: span 3;
+    .skills-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
   }
   .box-last-projects {
     grid-column: span 2;
@@ -152,6 +197,11 @@
   }
   .box-web-tools {
     grid-column: span 2;
+    .tools-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
   }
   .box-languages {
     grid-column: span 1;
