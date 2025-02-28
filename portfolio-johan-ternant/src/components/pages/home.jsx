@@ -33,15 +33,15 @@ const Home = () => {
             alt=""
           />
           <blockquote className="quote">
-            夢は叶うものではなく、叶えるもの
+            賢者も知らない
             <footer>
-              <span>(Yume wa kanau mono de wa naku, kanaeru mono)</span>
+              <span>(Kenja mo shiranai)</span>
             </footer>
           </blockquote>
           <span className="translation">
-            &quot;Les rêves ne sont pas des choses qui se réalisent, ce sont des
-            choses qui peuvent se réaliser.&quot;
+            &quot;Même le sage ne connaît pas tout.&quot;
           </span>
+          <p className="author">— Proverbe japonais</p>
         </BentoBox>
 
         {/* Bloc compétences et expériences */}

@@ -26,12 +26,16 @@
       font-style: italic;
       text-align: center;
     }
-
     .translation {
       display: flex;
       justify-content: center;
       font-family: Arial, sans-serif;
       line-height: 1.4;
+    }
+    .author {
+      font-size: 1em;
+      text-align: center;
+      margin-top: 0.5em;
     }
   }
 
