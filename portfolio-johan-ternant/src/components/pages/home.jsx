@@ -12,6 +12,7 @@ import {
   faFileAlt,
   faBullhorn,
   faEnvelope,
+  faRobot,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
@@ -76,8 +77,9 @@ const Home = () => {
             </h3>
             <p>
               SEO, Optimisation des performances, Responsive design,
-              Accessibilité web, Notion (Kanban), Feedly (veille),
-              Spécifications techniques.
+              Accessibilité Web (rédaction de rapport d’optimisation/d’audit
+              lighthouse) Rédaction de Spécifications techniques et utilisation
+              de la méthode Agile.
             </p>
           </div>
         </BentoBox>
@@ -124,7 +126,7 @@ const Home = () => {
         {/* Bloc des liens sociaux */}
         <BentoBox className="box-social" title="Contact">
           <p>
-            <FontAwesomeIcon icon={faEnvelope} className="" />
+            <FontAwesomeIcon icon={faEnvelope} />
             <a href="mailto:ternant.johan@sfr.fr">ternant.johan@sfr.fr</a>
           </p>
 
@@ -163,9 +165,8 @@ const Home = () => {
                 <strong>Outils</strong>
               </h3>
               <p>
-                GitHub, Figma, Visual Studio Code, Swagger Editor, Postman
-                Agent, Web accessibility, Test Lighthouse, React Tools, Test des
-                résultats enrichis, Convertisseur et compresseur des fichiers.
+                Git/GitHub, Figma, React Tools, Postman Agent, Notion (Kanban),
+                Feedly (veille), Swagger Editor.
               </p>
             </div>
 
@@ -175,6 +176,14 @@ const Home = () => {
                 <strong>Bureautique</strong>
               </h3>
               <p>PowerPoint, Word, Exel, Canva, Snappa.</p>
+            </div>
+
+            <div>
+              <h3>
+                <FontAwesomeIcon icon={faRobot} />
+                <strong>IA</strong>
+              </h3>
+              <p>Utilisation de ChatGPT.</p>
             </div>
 
             <div>

@@ -2,7 +2,6 @@
 .header {
   display: flex;
   align-items: center;
-  background-color: #282828;
   border: 1px solid #ccc;
   border-radius: 20px;
   margin-top: 30px;
@@ -10,6 +9,9 @@
   margin-right: 20px;
   height: 420px;
   justify-content: center;
+  box-shadow: 0 4px 8px #8b3e3a; //Rouge brique profond
+  background: rgba(12, 14, 20, 0.8); //Fond semi-transparent
+  padding: 5px;
 }
 .header nav a {
   display: flex;
@@ -46,6 +48,11 @@
 
   &:hover {
     transform: scale(1.05);
+    text-shadow: 
+      /*Noir bleuté*/ 0px 4px 8px rgba(12, 14, 20, 0.6),
+      /*Marron orangé*/ 0px 6px 12px rgba(165, 94, 63, 0.6),
+      /*Rouge brique profond*/ 0px 8px 16px rgba(139, 62, 58, 0.6),
+      /* Burgundy classique*/ 0px 10px 20px rgba(128, 0, 32, 0.6);
   }
 }
 .information_profile {
@@ -53,6 +60,7 @@
   letter-spacing: -0.5px;
   margin-right: 20px;
   text-align: center;
+  font-style: italic;
 }
 .profile_dev {
   display: initial;

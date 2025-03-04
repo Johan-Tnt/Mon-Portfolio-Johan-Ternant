@@ -2,13 +2,14 @@
 .footer {
   display: flex;
   justify-content: center;
-  background-color: #282828;
   border: 1px solid #ccc;
   border-radius: 20px;
   margin-bottom: 30px;
   margin-left: 20px;
   margin-right: 20px;
   padding: 30px;
+  box-shadow: 0 4px 8px #8b3e3a; //Rouge brique profond
+  background: rgba(12, 14, 20, 0.8); //Fond semi-transparent
 }
 .footer_contact {
   flex-direction: column;

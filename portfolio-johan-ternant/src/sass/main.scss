@@ -47,7 +47,14 @@
 //Reset
 body {
   font-family: "Fira Sans", sans-serif;
-  background-color: #0c0e14;
+  background: linear-gradient(
+    135deg,
+    /*Noir bleuté*/ #0c0e14 20%,
+    /*Marron orangé*/ #a55e3f 40%,
+    /*Rouge brique profond*/ #8b3e3a 60%,
+    /*Burgundy classique*/ #800020 70%,
+    /*Noir bleuté*/ #0c0e14 80%
+  );
   color: #fff;
   min-width: 320px;
   min-height: 100vh;
