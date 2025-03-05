@@ -29,20 +29,18 @@ const Home = () => {
             découvrir quelques projets sur lesquels j’ai travaillé, ou sur
             lesquels je suis actuellement.
           </p>
-          <img
-            src="./src/assets/img-webp-cp/Portfolio-presentation-new.webp"
-            alt=""
-          />
-          <blockquote className="quote">
-            賢者も知らない
-            <footer>
-              <span>(Kenja mo shiranai)</span>
-            </footer>
-          </blockquote>
-          <span className="translation">
-            &quot;Même le sage ne connaît pas tout.&quot;
-          </span>
-          <p className="author">— Proverbe japonais</p>
+          <div>
+            <blockquote className="quote">
+              賢者も知らない
+              <footer>
+                <span>(Kenja mo shiranai)</span>
+              </footer>
+            </blockquote>
+            <span className="translation">
+              &quot;Même le sage ne connaît pas tout.&quot;
+            </span>
+            <p className="author">— Proverbe japonais</p>
+          </div>
         </BentoBox>
 
         {/* Bloc compétences et expériences */}

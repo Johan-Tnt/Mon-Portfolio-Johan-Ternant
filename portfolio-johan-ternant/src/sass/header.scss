@@ -12,27 +12,47 @@
   box-shadow: 0 4px 8px #8b3e3a; //Rouge brique profond
   background: rgba(12, 14, 20, 0.8); //Fond semi-transparent
   padding: 5px;
+  background-image: url("./src/assets/img-webp-cp/Portfolio-presentation-new.webp");
+  background-size: cover; // Ajuste la taille pour couvrir toute la div
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; // Change la couleur du texte si nécessaire pour le contraste
+  position: relative; // Nécessaire pour l'overlay
 }
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(
+    0 0 0 / 30%
+  ); // Ajuste l’opacité ici (0 = transparent, 1 = opaque)
+  z-index: 1; // Passe derrière le contenu
+  border-radius: 20px;
+}
+.header > * {
+  position: relative;
+  z-index: 2; // Remet le texte et les éléments au premier plan
+}
+
 .header nav a {
   display: flex;
   align-items: center;
   gap: 20px;
-  color: white;
 }
 .img_johan {
   display: flex;
-  height: 100px;
-  width: 100px;
   border-radius: 100px;
-  margin: 20px;
   position: relative;
   left: 55px;
   margin: 0;
+  box-shadow:
+  /*Noir bleuté*/ 0px 4px 8px rgba(12, 14, 20, 0.6);
 }
 .navigation {
   position: absolute;
   margin-top: 150px;
   right: initial;
+  font-weight: bold;
 }
 .ul_navigation {
   display: flex;
@@ -43,16 +63,14 @@
 }
 .li_navigation {
   cursor: pointer;
-  color: white;
   transition: transform 0.2s ease-in-out;
-
+  text-shadow:
+  /*Noir bleuté*/ 0px 4px 8px rgba(12, 14, 20, 0.6),
+    /*Marron orangé*/ 0px 6px 12px rgba(165, 94, 63, 0.6),
+    /*Rouge brique profond*/ 0px 8px 16px rgba(139, 62, 58, 0.6),
+    /* Burgundy classique*/ 0px 10px 20px rgba(128, 0, 32, 0.6);
   &:hover {
     transform: scale(1.05);
-    text-shadow: 
-      /*Noir bleuté*/ 0px 4px 8px rgba(12, 14, 20, 0.6),
-      /*Marron orangé*/ 0px 6px 12px rgba(165, 94, 63, 0.6),
-      /*Rouge brique profond*/ 0px 8px 16px rgba(139, 62, 58, 0.6),
-      /* Burgundy classique*/ 0px 10px 20px rgba(128, 0, 32, 0.6);
   }
 }
 .information_profile {
@@ -61,11 +79,21 @@
   margin-right: 20px;
   text-align: center;
   font-style: italic;
+  text-shadow:
+  /*Noir bleuté*/ 0px 4px 8px rgba(12, 14, 20, 0.6),
+    /*Marron orangé*/ 0px 6px 12px rgba(165, 94, 63, 0.6),
+    /*Rouge brique profond*/ 0px 8px 16px rgba(139, 62, 58, 0.6),
+    /* Burgundy classique*/ 0px 10px 20px rgba(128, 0, 32, 0.6);
 }
 .profile_dev {
   display: initial;
   padding-left: 20px;
   margin-bottom: 70px;
+}
+.img_profile {
+  display: flex;
+  width: 100px;
+  height: 100px;
 }
 .icon_header {
   left: 15px;
@@ -96,6 +124,11 @@
     position: initial;
     left: 0;
     margin: 30px;
+  }
+  .img_profile {
+    display: flex;
+    width: 150px;
+    height: 150px;
   }
   .information_profile {
     margin-left: 10px;

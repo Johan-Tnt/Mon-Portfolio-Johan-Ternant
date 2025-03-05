@@ -11,11 +11,14 @@ const Header = () => {
   return (
     <div className="header">
       <div className="profile_dev ">
-        <img
-          src="./src/assets/img-profile-dev/Johan-Ternant-profile-new.webp"
-          alt="Johan Ternant"
-          className="img_johan"
-        />
+        <div className="img_profile">
+          <img
+            src="./src/assets/img-profile-dev/Johan-Ternant-profile-new.webp"
+            alt="Johan Ternant"
+            className="img_johan"
+          />
+        </div>
+
         <div className="information_profile">
           <h1>Johan Ternant</h1>
           <h2>Intégrateur Web</h2>

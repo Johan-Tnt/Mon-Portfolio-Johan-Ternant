@@ -20,6 +20,9 @@
 
   //Box Presentation
   .box-presentation {
+    div {
+      margin-top: 40px;
+    }
     p {
       line-height: 1.4;
     }
@@ -32,6 +35,7 @@
       display: flex;
       justify-content: center;
       line-height: 1.4;
+      text-align: center;
     }
     .author {
       font-size: 1em;
