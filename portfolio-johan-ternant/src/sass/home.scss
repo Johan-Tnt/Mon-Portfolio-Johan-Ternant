@@ -120,6 +120,9 @@
     text-align: center;
     align-items: center;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
 
     &:hover {
       transform: scale(1.05);

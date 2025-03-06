@@ -7,7 +7,7 @@ const Footer = () => {
       <div>
         <div>
           <p className="design_johan">
-            Designed by Johan Ternant, All Right Reserved © 2025
+            Conçu par Johan Ternant, Tous droits réservés © 2025
           </p>
         </div>
       </div>

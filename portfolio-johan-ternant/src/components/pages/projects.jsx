@@ -96,10 +96,10 @@ const projects = [
       "Frontend",
       "Minifier",
       "SEO",
-      "Audit Light House",
+      "Audit Lighthouse",
       "Wave",
       "Contrast Analyser",
-      "Test with enriched results",
+      "Test avec résultats enrichis",
     ],
     images: [
       {
@@ -163,7 +163,7 @@ const projects = [
     tags: [
       "Frontend",
       "Backend",
-      "Technical specifications",
+      "Spécifications techniques",
       "Kanban",
       "Veille",
     ],
@@ -368,7 +368,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       download
                     >
-                      Download Files
+                      Mon dossier
                     </a>
                   )}
                 </aside>

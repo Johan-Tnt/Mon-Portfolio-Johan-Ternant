@@ -34,7 +34,7 @@ const Header = () => {
                 style={{ color: "white" }}
                 className="icon_header"
               />
-              Home
+              Menu
             </NavLink>
           </li>
           <li className="li_navigation">
@@ -44,7 +44,7 @@ const Header = () => {
                 style={{ color: "white" }}
                 className="icon_header"
               />
-              Projects
+              Projets
             </NavLink>
           </li>
         </ul>

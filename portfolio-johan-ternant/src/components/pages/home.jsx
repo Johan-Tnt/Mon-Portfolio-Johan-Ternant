@@ -12,7 +12,6 @@ import {
   faFileAlt,
   faBullhorn,
   faEnvelope,
-  faRobot,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
@@ -174,14 +173,6 @@ const Home = () => {
                 <strong>Bureautique</strong>
               </h3>
               <p>PowerPoint, Word, Exel, Canva, Snappa.</p>
-            </div>
-
-            <div>
-              <h3>
-                <FontAwesomeIcon icon={faRobot} />
-                <strong>IA</strong>
-              </h3>
-              <p>Utilisation de ChatGPT.</p>
             </div>
 
             <div>
