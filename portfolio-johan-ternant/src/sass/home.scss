@@ -14,7 +14,9 @@
     border-radius: 20px;
     background: rgba(12, 14, 20, 0.8); // Fond semi-transparent
     border: solid 1px #ccc;
-    padding: 5px;
+    //padding: 5px;
+    padding-left: 20px;
+    padding-right: 15px;
     box-shadow: 0 4px 8px #8b3e3a; //Rouge brique profond
   }
 
@@ -60,45 +62,39 @@
   }
 
   //Contient le tableau de la Box Languages
-  .flag-icon {
-    width: 20px;
-    margin-right: 8px;
-    vertical-align: middle;
-    border-radius: 2px;
-    height: auto;
-  }
-  .languages-item {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-  }
-  .languages-item h3 {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1rem;
-  }
-  .languages-item p {
-    margin-top: 20px;
-    font-style: italic;
+  .box-languages {
+    padding-bottom: 15px;
+
+    .flag-icon {
+      width: 20px;
+      margin-right: 8px;
+      vertical-align: middle;
+      border-radius: 2px;
+      height: auto;
+    }
+    .languages-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+    }
+    .languages-item h3 {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1rem;
+    }
+    .languages-item p {
+      margin-top: 20px;
+      font-style: italic;
+    }
   }
 
   //Box Social
-  .bento-box,
-  .bento-box.box-social {
-    padding: 1.5rem;
-    border-radius: 20px;
-    color: white;
-  }
-
-  .bold {
-    font-weight: bold;
-  }
-
   .bento-box.box-social {
     .link_social {
       display: flex;
       gap: 1rem;
+      padding-bottom: 30px;
     }
     p {
       display: flex;
