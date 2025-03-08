@@ -292,24 +292,6 @@ const projects = [
     githubLink:
       "https://github.com/Johan-Tnt/Ternant_Johan_n_4_Am-liorez_l_interface_d_un_site_mobile_avec_des_animations_CSS_27_11_2023",
   },
-  /*{
-  {
-    title: "Booki",
-    description: "Développement d’un site desktop-first pour un hôtel.",
-    tags: ["Frontend", "HTML", "CSS"],
-    images: [
-      {
-        src: "./src/assets/img-webp-cp/Booki-1-new.webp",
-        alt: "Page d'accueil du site Booki",
-      },
-      {
-        src: "./src/assets/img-webp-cp/Booki-2-new.webp",
-        alt: "Page de réservation de chambres sur Booki",
-      },
-    ],
-    githubLink: "",
-  },
-  }*/
 ];
 
 /*{ Bloc des Tags et de leur couleur }*/
