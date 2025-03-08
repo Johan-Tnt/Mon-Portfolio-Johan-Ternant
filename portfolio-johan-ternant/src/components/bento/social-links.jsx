@@ -1,4 +1,4 @@
-// Code édité par Johan
+//Code édité par Johan
 //Composant pour les liens sociaux
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";

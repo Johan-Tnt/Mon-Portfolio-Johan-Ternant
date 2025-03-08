@@ -14,7 +14,6 @@
     border-radius: 20px;
     background: rgba(12, 14, 20, 0.8); // Fond semi-transparent
     border: solid 1px #ccc;
-    //padding: 5px;
     padding-left: 20px;
     padding-right: 15px;
     box-shadow: 0 4px 8px #8b3e3a; //Rouge brique profond
@@ -128,7 +127,6 @@
 
   //Box Dernier Projets
   .box-last-projects {
-    padding: 20px;
     text-align: left;
     border-radius: 20px;
 
@@ -154,6 +152,9 @@
     }
     p {
       line-height: 1.4;
+    }
+    img {
+      border-radius: 5px;
     }
   }
 }

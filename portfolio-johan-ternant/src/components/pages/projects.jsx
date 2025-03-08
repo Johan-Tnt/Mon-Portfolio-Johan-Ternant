@@ -10,12 +10,28 @@ const projects = [
     tags: ["Frontend", "React", "React Router", "Sass"],
     images: [
       {
-        src: "./src/assets/img-jpg-cp/Mon-Portfolio-1.png",
-        alt: "Aperçu de la page d'accueil du portfolio de Johan Ternant",
+        src: "./src/assets/img-webp-cp/Mon-Portfolio-1-new.webp",
+        alt: "Aperçu de la page d'accueil du portfolio de Johan Ternant, mettant en avant le nom, la tagline et l’identité visuelle du site, l'entête du menu, la présentation, les compétences et expériences, les langues et le contact",
       },
       {
-        src: "./src/assets/img-jpg-cp/Mon-Portfolio-2.png",
-        alt: "Présentation des projets sur le portfolio de Johan Ternant",
+        src: "./src/assets/img-webp-cp/Mon-Portfolio-2-new.webp",
+        alt: "Aperçu de la page d'accueil du portfolio de Johan Ternant, mettant en avant les outils de développement et de productivité, le dernier projet réalisé et le pied de page",
+      },
+      {
+        src: "./src/assets/img-webp-cp/Mon-Portfolio-3-new.webp",
+        alt: "Présentation des projets et de l'entête sur le portfolio montrant les projets Mon Portfolio et Argent Bank",
+      },
+      {
+        src: "./src/assets/img-webp-cp/Mon-Portfolio-4-new.webp",
+        alt: "Présentation des projets sur le portfolio montrant les projets 724Events et Nina Carducci",
+      },
+      {
+        src: "./src/assets/img-webp-cp/Mon-Portfolio-5-new.webp",
+        alt: "Présentation des projets sur le portfolio montrant les projets Kasa et Menu Maker",
+      },
+      {
+        src: "./src/assets/img-webp-cp/Mon-Portfolio-6-new.webp",
+        alt: "Présentation des projets sur le portfolio montrant les projets Sophie Bluel et OhMyFood et le pied de page",
       },
     ],
     githubLink: "https://github.com/Johan-Tnt/Mon-Portfolio-Johan-Ternant",
