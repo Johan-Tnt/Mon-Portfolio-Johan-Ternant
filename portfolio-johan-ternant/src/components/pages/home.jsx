@@ -24,9 +24,9 @@ const Home = () => {
             Passionné par le web, le design et les expériences interactives ✨
           </h3>
           <p>
-            En cliquant sur <span className="bold">Projets</span>, vous pourrez
-            découvrir quelques projets sur lesquels j’ai travaillé, ou sur
-            lesquels je suis actuellement.
+            En cliquant sur <strong className="bold">Projets</strong>, vous
+            pourrez découvrir quelques projets sur lesquels j’ai travaillé, ou
+            sur lesquels je suis actuellement.
           </p>
           <div>
             <blockquote className="quote">
