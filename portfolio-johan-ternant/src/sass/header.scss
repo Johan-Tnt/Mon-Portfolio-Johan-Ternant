@@ -62,10 +62,10 @@
   margin-top: 120px;
   margin-right: 60px;
   //Facilite la navigation au clavier
-  a:focus {
+  a:focus-visible {
     outline: 3px solid white;
     outline-offset: 4px;
-    border-radius: 1px;
+    border-radius: 8px;
   }
 }
 .li_navigation {
@@ -98,10 +98,10 @@
   h1,
   h2 {
     //Facilite la navigation au clavier
-    &:focus {
+    &:focus-visible {
       outline: 3px solid white;
       outline-offset: 4px;
-      border-radius: 1px;
+      border-radius: 8px;
     }
   }
 }

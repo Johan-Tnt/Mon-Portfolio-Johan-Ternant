@@ -35,7 +35,7 @@
       /* Burgundy classique*/ 0px 10px 20px rgba(128, 0, 32, 0.6);
   }
   //Facilite la navigation au clavier
-  button:focus {
+  button:focus-visible {
     outline: none;
     box-shadow: 0 0 0 2px white, 0 0 0 5px #a55e3f;
   }

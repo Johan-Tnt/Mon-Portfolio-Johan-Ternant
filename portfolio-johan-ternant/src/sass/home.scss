@@ -21,10 +21,10 @@
 
   h3 {
     //Facilite la navigation au clavier
-    &:focus {
+    &:focus-visible {
       outline: 3px solid white;
       outline-offset: 4px;
-      border-radius: 1px;
+      border-radius: 8px;
     }
   }
 
@@ -109,12 +109,12 @@
       gap: 10px;
       align-items: center;
       //Facilite la navigation au clavier
-      a:focus {
-        border-radius: 1px;
+      a:focus-visible {
+        border-radius: 8px;
       }
     }
     //Facilite la navigation au clavier
-    a:focus {
+    a:focus-visible {
       outline: 3px solid white;
       outline-offset: 4px;
     }
@@ -195,7 +195,7 @@
       font-style: italic;
     }
     //Facilite la navigation au clavier
-    a:focus {
+    a:focus-visible {
       outline: none;
       /*
         Une première ombre fine (largeur = décalage) de la couleur du
