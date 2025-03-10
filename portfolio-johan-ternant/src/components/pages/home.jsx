@@ -20,9 +20,9 @@ const Home = () => {
       <section className="bento-grid">
         {/* Bloc de présentation */}
         <BentoBox className="box-presentation" title="Bonjour, c'est Johan">
-          <p>
+          <h3 tabIndex="0">
             Passionné par le web, le design et les expériences interactives ✨
-          </p>
+          </h3>
           <p>
             En cliquant sur <span className="bold">Projets</span>, vous pourrez
             découvrir quelques projets sur lesquels j’ai travaillé, ou sur
@@ -45,7 +45,7 @@ const Home = () => {
         {/* Bloc compétences et expériences */}
         <BentoBox className="box-skills" title="Compétences et Expériences">
           <div className="skills-item">
-            <h3>
+            <h3 tabIndex="0">
               <FontAwesomeIcon icon={faGraduationCap} />
               <strong>Formation</strong>
             </h3>
@@ -53,7 +53,7 @@ const Home = () => {
           </div>
 
           <div className="skills-item">
-            <h3>
+            <h3 tabIndex="0">
               <FontAwesomeIcon icon={faLaptopCode} />
               <strong>Langages</strong>
             </h3>
@@ -61,14 +61,14 @@ const Home = () => {
           </div>
 
           <div className="skills-item">
-            <h3>
+            <h3 tabIndex="0">
               <FontAwesomeIcon icon={faRocket} /> <strong>Frameworks</strong>
             </h3>
             <p>React (avec React Router, Redux).</p>
           </div>
 
           <div className="skills-item">
-            <h3>
+            <h3 tabIndex="0">
               <FontAwesomeIcon icon={faChartLine} />
               <strong>Compétences</strong>
             </h3>
@@ -84,7 +84,7 @@ const Home = () => {
         {/* Bloc langues */}
         <BentoBox className="box-languages" title="Langues">
           <div className="languages-item">
-            <h3>
+            <h3 tabIndex="0">
               <img
                 src="https://flagcdn.com/w40/fr.png"
                 alt="Français"
@@ -96,7 +96,7 @@ const Home = () => {
           </div>
 
           <div className="languages-item">
-            <h3>
+            <h3 tabIndex="0">
               <img
                 src="https://flagcdn.com/w40/gb.png"
                 alt="Anglais"
@@ -108,7 +108,7 @@ const Home = () => {
           </div>
 
           <div className="languages-item">
-            <h3>
+            <h3 tabIndex="0">
               <img
                 src="https://flagcdn.com/w40/es.png"
                 alt="Espagnol"
@@ -157,7 +157,7 @@ const Home = () => {
         >
           <div className="tools-container">
             <div>
-              <h3>
+              <h3 tabIndex="0">
                 <FontAwesomeIcon icon={faTools} />
                 <strong>Outils</strong>
               </h3>
@@ -168,7 +168,7 @@ const Home = () => {
             </div>
 
             <div>
-              <h3>
+              <h3 tabIndex="0">
                 <FontAwesomeIcon icon={faFileAlt} />
                 <strong>Bureautique</strong>
               </h3>
@@ -176,7 +176,7 @@ const Home = () => {
             </div>
 
             <div>
-              <h3>
+              <h3 tabIndex="0">
                 <FontAwesomeIcon icon={faBullhorn} />
                 <strong>Marketing</strong>
               </h3>

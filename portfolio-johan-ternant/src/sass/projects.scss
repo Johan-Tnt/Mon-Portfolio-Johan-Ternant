@@ -1,5 +1,4 @@
 //Code éditer par Johan
-
 .section_projects {
   display: grid;
   grid-template-columns: 1fr; //Mobile : une seule colonne
@@ -23,6 +22,14 @@
   padding: 20px;
   box-shadow: 0 4px 8px #8b3e3a; //Rouge brique profond
   background: rgba(12, 14, 20, 0.8); //Fond semi-transparent
+  h2 {
+    //Facilite la navigation au clavier
+    &:focus {
+      outline: 3px solid white;
+      outline-offset: 4px;
+      border-radius: 1px;
+    }
+  }
 }
 
 .list_projects {
@@ -58,6 +65,11 @@
     transform: scale(1.05);
     box-shadow: 0 4px 8px #a55e3f; //Marron orangé
   }
+  //Facilite la navigation au clavier
+  a:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px white, 0 0 0 5px #a55e3f;
+  }
 }
 
 //Boutons de couleur pour langages et frameworks utilisés lors des projets
@@ -73,6 +85,11 @@
   gap: 8px;
   flex: 1; //Pour occuper toute la largeur dispobible
   padding: 0;
+  //Facilite la navigation au clavier
+  li:focus {
+    outline: 3px solid white;
+    outline-offset: 4px;
+  }
 }
 
 .tag {

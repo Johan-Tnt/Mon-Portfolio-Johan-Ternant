@@ -19,6 +19,15 @@
     box-shadow: 0 4px 8px #8b3e3a; //Rouge brique profond
   }
 
+  h3 {
+    //Facilite la navigation au clavier
+    &:focus {
+      outline: 3px solid white;
+      outline-offset: 4px;
+      border-radius: 1px;
+    }
+  }
+
   //Box Presentation
   .box-presentation {
     div {
@@ -99,6 +108,15 @@
       display: flex;
       gap: 10px;
       align-items: center;
+      //Facilite la navigation au clavier
+      a:focus {
+        border-radius: 1px;
+      }
+    }
+    //Facilite la navigation au clavier
+    a:focus {
+      outline: 3px solid white;
+      outline-offset: 4px;
     }
   }
 
@@ -175,6 +193,15 @@
       font-size: 1rem;
       line-height: 1.4;
       font-style: italic;
+    }
+    //Facilite la navigation au clavier
+    a:focus {
+      outline: none;
+      /*
+        Une première ombre fine (largeur = décalage) de la couleur du
+        fond, une deuxième pour notre cadre (largeur = décalage + cadre)
+      */
+      box-shadow: 0 0 0 2px white, 0 0 0 5px #a55e3f;
     }
   }
 }

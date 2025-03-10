@@ -20,8 +20,8 @@ const Header = () => {
         </div>
 
         <div className="information_profile">
-          <h1>Johan Ternant</h1>
-          <h2>Intégrateur Web</h2>
+          <h1 tabIndex="0">Johan Ternant</h1>
+          <h2 tabIndex="0">Intégrateur Web</h2>
         </div>
       </div>
 

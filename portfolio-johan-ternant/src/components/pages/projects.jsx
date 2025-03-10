@@ -322,7 +322,7 @@ const Projects = () => {
     <main>
       <section>
         <div className="projects_title">
-          <h2>Mes Projets</h2>
+          <h2 tabIndex="0">Mes Projets</h2>
         </div>
         <div className="section_projects">
           {projects.map((project, index) => (
@@ -343,6 +343,7 @@ const Projects = () => {
                         key={tag}
                         className="tag"
                         style={{ borderColor: tagColors[tag] || "grey" }}
+                        tabIndex="0"
                       >
                         {tag}
                       </li>

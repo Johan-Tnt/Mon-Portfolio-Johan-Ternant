@@ -61,6 +61,12 @@
   flex-direction: column;
   margin-top: 120px;
   margin-right: 60px;
+  //Facilite la navigation au clavier
+  a:focus {
+    outline: 3px solid white;
+    outline-offset: 4px;
+    border-radius: 1px;
+  }
 }
 .li_navigation {
   cursor: pointer;
@@ -89,6 +95,15 @@
     /*Marron orangé*/ 0px 6px 12px rgba(165, 94, 63, 0.6),
     /*Rouge brique profond*/ 0px 8px 16px rgba(139, 62, 58, 0.6),
     /* Burgundy classique*/ 0px 10px 20px rgba(128, 0, 32, 0.6);
+  h1,
+  h2 {
+    //Facilite la navigation au clavier
+    &:focus {
+      outline: 3px solid white;
+      outline-offset: 4px;
+      border-radius: 1px;
+    }
+  }
 }
 .profile_dev {
   display: initial;
