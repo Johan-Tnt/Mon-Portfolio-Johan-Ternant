@@ -51,7 +51,7 @@
 }
 .navigation {
   position: absolute;
-  margin-top: 150px;
+  margin-top: 170px;
   right: initial;
   font-weight: bold;
 }
@@ -61,6 +61,7 @@
   flex-direction: column;
   margin-top: 120px;
   margin-right: 60px;
+  align-items: center;
   //Facilite la navigation au clavier
   a:focus-visible {
     outline: 3px solid white;
@@ -95,18 +96,9 @@
     /*Marron orangé*/ 0px 6px 12px rgba(165, 94, 63, 0.6),
     /*Rouge brique profond*/ 0px 8px 16px rgba(139, 62, 58, 0.6),
     /* Burgundy classique*/ 0px 10px 20px rgba(128, 0, 32, 0.6);
-  h1,
-  h2 {
-    //Facilite la navigation au clavier
-    &:focus-visible {
-      outline: 3px solid white;
-      outline-offset: 4px;
-      border-radius: 8px;
-    }
-  }
 }
 .profile_dev {
-  display: initial;
+  display: block;
   padding-left: 20px;
   margin-bottom: 70px;
 }
@@ -120,6 +112,75 @@
   position: relative;
 }
 
+//Contient le bouton de changement de langues
+.language-dropdown {
+  position: relative;
+  //display: inline-block;
+  margin-left: 20px;
+
+  .change-language {
+    background: var(
+      --Button-Gradient,
+      linear-gradient(193deg, #504a4a -11.44%, #6e6e6e 123.93%)
+    );
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+
+    &:hover {
+      background: linear-gradient(
+        135deg,
+        #8b3e3a 40%,
+        #800020 60%,
+        #a55e3f 80%
+      );
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px #a55e3f; //Marron orangé
+    }
+
+    &:focus-visible {
+      outline: 3px solid white;
+      outline-offset: 4px;
+      border-radius: 8px;
+    }
+  }
+
+  .dropdown-content {
+    position: absolute;
+    background-color: white;
+    //min-width: 120px;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    border-radius: 3px;
+    overflow: hidden;
+    right: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      button {
+        width: 100%;
+        padding: 6px 10px;
+        font-size: 13px;
+        text-align: left;
+        background: #fff;
+        border: none;
+        display: block;
+        font-weight: bold;
+
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+    }
+  }
+}
+
 //Media Queries "Mobile first"
 @media (min-width: 768px) {
   .header {
@@ -128,7 +189,8 @@
   }
   .navigation {
     margin-top: 0;
-    right: 50px;
+    //right: 50px;
+    right: 30px;
   }
   .ul_navigation {
     flex-direction: initial;

@@ -13,21 +13,17 @@ import {
   faBullhorn,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t } = useTranslation();
   return (
     <main className="home">
       <section className="bento-grid">
         {/* Bloc de présentation */}
-        <BentoBox className="box-presentation" title="Bonjour, c'est Johan">
-          <h3 tabIndex="0">
-            Passionné par le web, le design et les expériences interactives ✨
-          </h3>
-          <p>
-            En cliquant sur <strong>Projets</strong>, vous pourrez découvrir
-            quelques projets sur lesquels j’ai travaillé, ou sur lesquels je
-            suis actuellement.
-          </p>
+        <BentoBox className="box-presentation" title={t("helloTitle")}>
+          <h3>{t("passionateTitle")}✨</h3>
+          <p>{t("projectsDescription")}</p>
           <div>
             <blockquote className="quote">
               賢者も知らない
@@ -35,152 +31,134 @@ const Home = () => {
                 <span>(Kenja mo shiranai)</span>
               </footer>
             </blockquote>
-            <span className="translation">
-              &quot;Même le sage ne connaît pas tout.&quot;
-            </span>
-            <p className="author">— Proverbe japonais</p>
+            <span className="translation">{t("japaneseProverb")}</span>
+            <p className="author">— {t("proverbAuthor")}</p>
           </div>
         </BentoBox>
 
         {/* Bloc compétences et expériences */}
-        <BentoBox className="box-skills" title="Compétences et Expériences">
+        <BentoBox className="box-skills" title={t("skillsTitle")}>
           <div className="skills-item">
-            <h3 tabIndex="0">
+            <h3>
               <FontAwesomeIcon icon={faGraduationCap} />
-              <strong>Formation</strong>
+              <strong>{t("educationTitle")}</strong>
             </h3>
-            <p>Intégrateur Web avec OpenClassrooms</p>
+            <p>{t("educationDescription")}</p>
           </div>
 
           <div className="skills-item">
-            <h3 tabIndex="0">
+            <h3>
               <FontAwesomeIcon icon={faLaptopCode} />
-              <strong>Langages</strong>
+              <strong>{t("languagesTitle")}</strong>
             </h3>
-            <p>HTML/CSS, Sass, JavaScript.</p>
+            <p>{t("languagesDescription")}</p>
           </div>
 
           <div className="skills-item">
-            <h3 tabIndex="0">
-              <FontAwesomeIcon icon={faRocket} /> <strong>Frameworks</strong>
+            <h3>
+              <FontAwesomeIcon icon={faRocket} />
+              <strong>{t("frameworksTitle")}</strong>
             </h3>
-            <p>React (avec React Router, Redux).</p>
+            <p>{t("frameworksDescription")}</p>
           </div>
 
           <div className="skills-item">
-            <h3 tabIndex="0">
+            <h3>
               <FontAwesomeIcon icon={faChartLine} />
-              <strong>Compétences</strong>
+              <strong>{t("skillsListTitle")}</strong>
             </h3>
-            <p>
-              SEO, Optimisation des performances, Responsive design,
-              Accessibilité Web (rédaction de rapport d’optimisation/d’audit
-              lighthouse) Rédaction de Spécifications techniques et utilisation
-              de la méthode Agile.
-            </p>
+            <p>{t("skillsListDescription")}</p>
           </div>
         </BentoBox>
 
         {/* Bloc langues */}
-        <BentoBox className="box-languages" title="Langues">
+        <BentoBox className="box-languages" title={t("languagesBlockTitle")}>
           <div className="languages-item">
-            <h3 tabIndex="0">
+            <h3>
               <img
                 src="https://flagcdn.com/w40/fr.png"
                 alt="Français"
                 className="flag-icon"
               />
-              <strong>Français</strong>
+              <strong>{t("frenchTitle")}</strong>
             </h3>
-            <p>Langue maternelle</p>
+            <p>{t("frenchLevel")}</p>
           </div>
 
           <div className="languages-item">
-            <h3 tabIndex="0">
+            <h3>
               <img
                 src="https://flagcdn.com/w40/gb.png"
                 alt="Anglais"
                 className="flag-icon"
               />
-              <strong>Anglais</strong>
+              <strong>{t("englishTitle")}</strong>
             </h3>
-            <p>Niveau A2</p>
+            <p>{t("englishLevel")}</p>
           </div>
 
           <div className="languages-item">
-            <h3 tabIndex="0">
+            <h3>
               <img
                 src="https://flagcdn.com/w40/es.png"
                 alt="Espagnol"
                 className="flag-icon"
               />
-              <strong>Espagnol</strong>
+              <strong>{t("spanishTitle")}</strong>
             </h3>
-            <p>Niveau A1</p>
+            <p>{t("spanishLevel")}</p>
           </div>
         </BentoBox>
 
         {/* Bloc des liens sociaux */}
-        <BentoBox className="box-social" title="Contact">
+        <BentoBox className="box-social" title={t("contactTitle")}>
           <p>
             <FontAwesomeIcon icon={faEnvelope} />
-            <a href="mailto:ternant.johan@sfr.fr">ternant.johan@sfr.fr</a>
+            <a href="mailto:ternant.johan@sfr.fr">{t("contactEmail")}</a>
           </p>
-
           <SocialLinks />
         </BentoBox>
 
         {/* Bloc dédié au dernier projet réalisé */}
         <BentoBox
           className="bento-box box-last-projects"
-          title="Mon dernier projet"
+          title={t("latestProjectTitle")}
         >
           <img
             src="./src/assets/img-webp-cp/Argent-Bank-1-new.webp"
             alt="Argent Bank Project Preview"
           />
-          <p>
-            Découvrez mon projet <strong>Argent Bank</strong>, une application
-            bancaire construite avec React, Redux et un backend. Ce projet
-            inclus une API Swagger pour une gestion d&apos;authentification
-            complète.
-          </p>
+          <p>{t("latestProjectDescription")}</p>
           <a href="/projects" className="button-link">
-            Voir plus
+            {t("seeMore")}
           </a>
         </BentoBox>
 
         {/* Bloc Outils utilisés */}
-        <BentoBox
-          className="box-web-tools"
-          title="Outils de Développement et de Productivité"
-        >
+        <BentoBox className="box-web-tools" title={t("toolsTitle")}>
           <div className="tools-container">
             <div>
-              <h3 tabIndex="0">
+              <h3>
                 <FontAwesomeIcon icon={faTools} />
-                <strong>Outils</strong>
+                <strong>{t("toolsCategoryTitle")}</strong>
               </h3>
-              <p>
-                Git/GitHub, Figma, React Tools, Postman Agent, Notion (Kanban),
-                Feedly (veille), Swagger Editor.
-              </p>
+              <p>{t("toolsDescription")}</p>
             </div>
 
             <div>
-              <h3 tabIndex="0">
+              <h3>
                 <FontAwesomeIcon icon={faFileAlt} />
-                <strong>Bureautique</strong>
+                <strong>{t("officeTitle")}</strong>
               </h3>
-              <p>PowerPoint, Word, Exel, Canva, Snappa.</p>
+              <p>{t("officeDescription")}</p>
             </div>
 
             <div>
-              <h3 tabIndex="0">
+              <h3>
                 <FontAwesomeIcon icon={faBullhorn} />
-                <strong>Marketing</strong>
+                <strong>{t("marketingTitle")}</strong>
               </h3>
-              <p>YouTube Studios, Recherche mots clés/Hashtags.</p>
+              <p>{t("marketingDescription")}</p>
             </div>
           </div>
         </BentoBox>

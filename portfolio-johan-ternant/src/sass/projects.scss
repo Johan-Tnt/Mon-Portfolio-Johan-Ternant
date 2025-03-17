@@ -22,14 +22,6 @@
   padding: 20px;
   box-shadow: 0 4px 8px #8b3e3a; //Rouge brique profond
   background: rgba(12, 14, 20, 0.8); //Fond semi-transparent
-  h2 {
-    //Facilite la navigation au clavier
-    &:focus-visible {
-      outline: 3px solid white;
-      outline-offset: 4px;
-      border-radius: 8px;
-    }
-  }
 }
 
 .list_projects {
@@ -85,11 +77,6 @@
   gap: 8px;
   flex: 1; //Pour occuper toute la largeur dispobible
   padding: 0;
-  //Facilite la navigation au clavier
-  li:focus-visible {
-    outline: 3px solid white;
-    outline-offset: 4px;
-  }
 }
 
 .tag {
