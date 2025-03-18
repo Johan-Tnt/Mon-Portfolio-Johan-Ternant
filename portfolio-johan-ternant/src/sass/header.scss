@@ -18,6 +18,11 @@
   background-repeat: no-repeat;
   color: white;
   position: relative; //Nécessaire pour l'overlay
+  a:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+    border-radius: 8px;
+  }
 }
 .header::before {
   content: "";
