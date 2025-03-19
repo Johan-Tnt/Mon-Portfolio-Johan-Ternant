@@ -1,0 +1,78 @@
+//Code édité par Johan
+.message_error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .error_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 20px;
+    background: rgba(12, 14, 20, 0.8);
+    box-shadow: 0 4px 8px #8b3e3a;
+    width: 93%;
+    height: 85%;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .error_icon {
+    font-size: 6rem;
+    color: #a55e3f;
+  }
+
+  .error_title {
+    font-size: 6rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .error_text {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+
+  .error_redirection {
+    padding: 12px 24px;
+    background: var(
+      --Button-Gradient,
+      linear-gradient(193deg, #504a4a -11.44%, #6e6e6e 123.93%)
+    );
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+    &:hover {
+      background: linear-gradient(
+        135deg,
+        #8b3e3a 40%,
+        #800020 60%,
+        #a55e3f 80%
+      );
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px #a55e3f; //Marron orangé
+    }
+    &:focus-visible {
+      outline: 3px solid white;
+      outline-offset: 4px;
+      border-radius: 8px;
+    }
+  }
+}
+//Media Queries "Mobile first"
+@media (min-width: 1440px) {
+  .message_error {
+    .error_box {
+      width: 96%;
+      height: 87%;
+    }
+  }
+}

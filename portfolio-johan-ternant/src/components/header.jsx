@@ -47,7 +47,7 @@ const Header = () => {
           <li className="li_navigation">
             <NavLink to="/">
               <FontAwesomeIcon icon={faHouse} className="icon_header" />
-              {t("menu")}
+              {t("home")}
             </NavLink>
           </li>
           <li className="li_navigation">
@@ -67,10 +67,24 @@ const Header = () => {
             {isDropdownOpen && (
               <ul className="dropdown-content">
                 <li>
-                  <button onClick={() => changeLanguage("fr")}>Français</button>
+                  <button
+                    onClick={() => changeLanguage("fr")}
+                    aria-label="Français (Langue sélectionnée)"
+                    aria-pressed={i18n.language === "fr"}
+                    lang="fr"
+                  >
+                    Français
+                  </button>
                 </li>
                 <li>
-                  <button onClick={() => changeLanguage("en")}>English</button>
+                  <button
+                    onClick={() => changeLanguage("en")}
+                    aria-label="English (Selected language)"
+                    aria-pressed={i18n.language === "en"}
+                    lang="en"
+                  >
+                    English
+                  </button>
                 </li>
               </ul>
             )}

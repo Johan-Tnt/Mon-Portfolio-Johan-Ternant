@@ -1,6 +1,6 @@
 {
   "jobTitle": "Intégrateur Web",
-  "menu": "Menu",
+  "home": "Accueil",
   "projects": "Projets",
 
   "helloTitle": "Bonjour, c'est Johan",
@@ -50,6 +50,8 @@
   "portfolioImageAlt4": "Présentation des projets sur le portfolio montrant les projets 724Events et Nina Carducci",
   "portfolioImageAlt5": "Présentation des projets sur le portfolio montrant les projets Kasa et Menu Maker",
   "portfolioImageAlt6": "Présentation des projets sur le portfolio montrant les projets Sophie Bluel et OhMyFood et le pied de page",
+  "porfolioImageAlt7": "Aperçu 1 de la page d'erreur 404 du portfolio",
+  "porfolioImageAlt8": "Aperçu 2 de la page d'erreur 404 du portfolio",
   "ArgentBankImageAlt1": "Page de connexion de l'application bancaire",
   "ArgentBankImageAlt2": "Tableau de bord utilisateur avec transactions",
   "ArgentBankImageAlt3": "Interface de gestion des comptes",
@@ -129,6 +131,10 @@
   "TechnicalSpecifications": "Spécifications Techniques",
   "projectsGitHubLinks": "GitHub",
   "projectsFilesLinks": "Mes fichiers",
+
+  "error404Title": "404",
+  "error404Text": "Oups! La page que vous demandez n'existe pas.",
+  "error404Redirection": "Retourner sur la page d’accueil",
 
   "footerText": "Conçu par Johan Ternant, Tous droits réservés © {{year}}"
 }
