@@ -1,0 +1,16 @@
+# www.robotstxt.org - Fichier robots.txt pour Johan.Ternant.com
+
+Sitemap: https://Johan.Ternant.com/sitemap.xml
+Sitemap: https://Johan.Ternant.com/sitemap-projets.xml
+
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /search/
+Disallow: /temp/
+Disallow: /drafts/
+
+User-agent: GPTBot
+User-agent: Amazonbot
+Disallow: /

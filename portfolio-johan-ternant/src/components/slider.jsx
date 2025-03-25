@@ -33,6 +33,8 @@ const Slider = ({ images }) => {
         src={images[currentIndex].src} //Accède à src dans l'objet image
         alt={images[currentIndex].alt} //Accède à alt dans l'objet image
         className="slider-image"
+        width="1263"
+        height="607"
       />
       <button
         onClick={nextSlide}

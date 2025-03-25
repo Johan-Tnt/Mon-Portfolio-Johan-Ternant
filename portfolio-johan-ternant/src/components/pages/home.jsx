@@ -77,8 +77,10 @@ const Home = () => {
             <h3>
               <img
                 src="https://flagcdn.com/w40/fr.png"
-                alt="Français"
+                alt=""
                 className="flag-icon"
+                width="20"
+                height="12"
               />
               <strong>{t("frenchTitle")}</strong>
             </h3>
@@ -89,8 +91,10 @@ const Home = () => {
             <h3>
               <img
                 src="https://flagcdn.com/w40/gb.png"
-                alt="Anglais"
+                alt=""
                 className="flag-icon"
+                width="20"
+                height="12"
               />
               <strong>{t("englishTitle")}</strong>
             </h3>
@@ -101,8 +105,10 @@ const Home = () => {
             <h3>
               <img
                 src="https://flagcdn.com/w40/es.png"
-                alt="Espagnol"
+                alt=""
                 className="flag-icon"
+                width="20"
+                height="12"
               />
               <strong>{t("spanishTitle")}</strong>
             </h3>
@@ -127,6 +133,8 @@ const Home = () => {
           <img
             src="./src/assets/img-webp-cp/Argent-Bank-1-new.webp"
             alt="Argent Bank Project Preview"
+            width="1636"
+            height="801"
           />
           <p>{t("latestProjectDescription")}</p>
           <a href="/projects" className="button-link">

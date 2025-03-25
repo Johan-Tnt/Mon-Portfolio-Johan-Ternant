@@ -12,10 +12,6 @@
   box-shadow: 0 4px 8px #8b3e3a; //Rouge brique profond
   background: rgba(12, 14, 20, 0.8); //Fond semi-transparent
   padding: 5px;
-  background-image: url("./src/assets/img-webp-cp/Portfolio-banner-new.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: white;
   position: relative; //Nécessaire pour l'overlay
   a:focus-visible {
@@ -24,17 +20,20 @@
     border-radius: 8px;
   }
 }
-.header::before {
-  content: "";
+.header-image {
   position: absolute;
-  inset: 0;
-  background: rgb(0 0 0 / 30%); //Oopacité (0 = transparent, 1 = opaque)
-  z-index: 1; //Passe derrière le contenu
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; //Place l’image en arrière-plan
   border-radius: 20px;
+  filter: brightness(70%); //Réduit la luminosité pour assombrir l’image
 }
+
 .header > * {
-  position: relative;
-  z-index: 2; //Remet le texte et les éléments au premier plan
+  z-index: 1; //Remet le texte et les éléments au premier plan
 }
 
 .header nav a {
@@ -81,7 +80,7 @@
     /*Noir bleuté*/ 0px 4px 8px rgba(12, 14, 20, 0.6),
     /*Marron orangé*/ 0px 6px 12px rgba(165, 94, 63, 0.6),
     /*Rouge brique profond*/ 0px 8px 16px rgba(139, 62, 58, 0.6),
-    /* Burgundy classique*/ 0px 10px 20px rgba(128, 0, 32, 0.6);
+    /*Burgundy classique*/ 0px 10px 20px rgba(128, 0, 32, 0.6);
   filter: drop-shadow(2px 2px 4px rgba(12, 14, 20, 0.6))
     drop-shadow(3px 3px 6px rgba(165, 94, 63, 0.6))
     drop-shadow(4px 4px 8px rgba(139, 62, 58, 0.6))
@@ -100,7 +99,7 @@
     /*Noir bleuté*/ 0px 4px 8px rgba(12, 14, 20, 0.6),
     /*Marron orangé*/ 0px 6px 12px rgba(165, 94, 63, 0.6),
     /*Rouge brique profond*/ 0px 8px 16px rgba(139, 62, 58, 0.6),
-    /* Burgundy classique*/ 0px 10px 20px rgba(128, 0, 32, 0.6);
+    /*Burgundy classique*/ 0px 10px 20px rgba(128, 0, 32, 0.6);
 }
 .profile_dev {
   display: block;

@@ -24,14 +24,24 @@ const Header = () => {
 
   return (
     <div className="header">
+      <img
+        src="./src/assets/img-webp-cp/Portfolio-banner-new.webp"
+        alt=""
+        width="2000"
+        height="500"
+        loading="eager"
+        className="header-image"
+      />
       <NavLink to="/">
         {/* Lien vers le menu, qui enveloppe tout */}
         <div className="profile_dev">
           <div className="img_profile">
             <img
               src="./src/assets/img-profile-dev/Johan-Ternant-profile-new.webp"
-              alt="Johan Ternant"
+              alt=""
               className="img_johan"
+              width="90"
+              height="90"
             />
           </div>
 
