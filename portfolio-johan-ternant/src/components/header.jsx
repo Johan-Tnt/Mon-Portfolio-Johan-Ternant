@@ -38,7 +38,7 @@ const Header = () => {
           <div className="img_profile">
             <img
               src="./src/assets/img-profile-dev/Johan-Ternant-profile-new.webp"
-              alt=""
+              alt="Johan Ternant"
               className="img_johan"
               width="90"
               height="90"
