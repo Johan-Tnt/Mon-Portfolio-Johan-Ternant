@@ -62,16 +62,20 @@ const projects = [
         alt: "ArgentBankImageAlt3",
       },
       {
-        src: "./src/assets/img-webp-cp/Argent-Bank-API-Swagger-Editor-1-new.webp",
+        src: "./src/assets/img-webp-cp/Argent-Bank-4-new.webp",
         alt: "ArgentBankImageAlt4",
       },
       {
-        src: "./src/assets/img-webp-cp/Argent-Bank-API-Swagger-Editor-2-new.webp",
+        src: "./src/assets/img-webp-cp/Argent-Bank-API-Swagger-Editor-1-new.webp",
         alt: "ArgentBankImageAlt5",
       },
       {
-        src: "./src/assets/img-webp-cp/Argent-Bank-API-Swagger-Editor-3-new.webp",
+        src: "./src/assets/img-webp-cp/Argent-Bank-API-Swagger-Editor-2-new.webp",
         alt: "ArgentBankImageAlt6",
+      },
+      {
+        src: "./src/assets/img-webp-cp/Argent-Bank-API-Swagger-Editor-3-new.webp",
+        alt: "ArgentBankImageAlt7",
       },
     ],
     githubLink:
