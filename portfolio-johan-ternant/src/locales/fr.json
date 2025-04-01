@@ -2,6 +2,7 @@
   "jobTitle": "Intégrateur Web",
   "home": "Accueil",
   "projects": "Projets",
+  "changeLanguage": "Changer de langue",
 
   "helloTitle": "Bonjour, c'est Johan",
   "passionateTitle": "Passionné par le web, le design et les expériences interactives",
@@ -29,6 +30,9 @@
 
   "contactTitle": "Contact",
   "contactEmail": "ternant.johan@sfr.fr",
+  "contactLinkGitHub": "Lien GitHub",
+  "contactLinkLinkedIn": "Lien Linkedin",
+  "contactLinkCV": "Lien CV",
 
   "latestProjectTitle": "Mon dernier projet",
   "latestProjectAlt": "Aperçu du projet Argent Bank",
@@ -113,6 +117,8 @@
   "MenuMakerDescription": "Direction de projet d’un outil de gestion de menus ; suivi des spécifications techniques et utilisation de la méthode Agile.",
   "SophieBluelDescription": "Création d’un site dynamique pour une architecte d’intérieur.",
   "OhMyFoodDescription": "Développement d’un site mobile-first pour des restaurants, avec animations CSS.",
+  "arrowLeftSlider": "Diapositive précédente",
+  "arrowRightSlider": "Diapositive suivante",
   "Frontend": "Frontend",
   "Backend": "Backend",
   "React": "React",

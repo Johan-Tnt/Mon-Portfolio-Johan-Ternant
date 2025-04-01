@@ -13,11 +13,13 @@ const Error404 = () => {
   };
   const { t } = useTranslation();
   return (
-    <div className="message_error">
+    <div className="message_error" role="alert">
       <div className="error_box">
         <FontAwesomeIcon icon={faTriangleExclamation} className="error_icon" />
         <h1 className="error_title">{t("error404Title")}</h1>
-        <p className="error_text">{t("error404Text")}</p>
+        <p className="error_text" aria-live="assertive">
+          {t("error404Text")}
+        </p>
         <button
           onClick={handleRedirect}
           className="error_redirection"

@@ -132,7 +132,7 @@ const Home = () => {
         >
           <img
             src="./src/assets/img-webp-cp/Argent-Bank-1-new.webp"
-            alt="Argent Bank Project Preview"
+            alt={t("latestProjectAlt")}
             width="1636"
             height="801"
           />

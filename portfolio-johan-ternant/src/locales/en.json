@@ -2,6 +2,7 @@
   "jobTitle": "Web Integrator",
   "home": "Home",
   "projects": "Projects",
+  "changeLanguage": "Change language",
 
   "helloTitle": "Hello, I'm Johan",
   "passionateTitle": "Passionate about web, design, and interactive experiences",
@@ -29,6 +30,9 @@
 
   "contactTitle": "Contact",
   "contactEmail": "ternant.johan@sfr.fr",
+  "contactLinkGitHub": "Link GitHub",
+  "contactLinkLinkedIn": "Link Linkedin",
+  "contactLinkCV": "Link CV",
 
   "latestProjectTitle": "My Latest Project",
   "latestProjectAlt": "Argent Bank Project Preview",
@@ -113,6 +117,8 @@
   "MenuMakerDescription": "Project management of a menu management tool; monitoring of technical specifications and use of the Agile method",
   "SophieBluelDescription": "Creation of a dynamic website for an interior designer",
   "OhMyFoodDescription": "Development of a mobile-first site for restaurants, with CSS animations",
+  "arrowLeftSlider": "Previous slide",
+  "arrowRightSlider": "Next slide",
   "Frontend": "Frontend",
   "Backend": "Backend",
   "React": "React",

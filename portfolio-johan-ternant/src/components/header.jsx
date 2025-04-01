@@ -71,7 +71,13 @@ const Header = () => {
           </li>
           {/* Sélecteur de langue */}
           <li className="language-dropdown li_navigation">
-            <button className="change-language" onClick={toggleDropdown}>
+            <button
+              className="change-language"
+              onClick={toggleDropdown}
+              aria-label={t("changeLanguage")}
+              aria-expanded={isDropdownOpen}
+              aria-controls="language-menu"
+            >
               {i18n.language === "fr" ? "Français" : "English"}
             </button>
             {isDropdownOpen && (

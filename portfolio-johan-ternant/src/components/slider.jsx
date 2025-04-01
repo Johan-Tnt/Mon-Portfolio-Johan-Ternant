@@ -1,6 +1,7 @@
 //Code éditer par Johan
 //Contient le "Slider" des "Projets"
 import { useState } from "react"; //useState pour la gestion des états
+import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 /* eslint-disable react/prop-types */
@@ -20,12 +21,13 @@ const Slider = ({ images }) => {
     );
   };
 
+  const { t } = useTranslation();
   return (
     <div className="slider">
       <button
         onClick={prevSlide}
         className="slider-btn prev-btn"
-        aria-label="Previous slide"
+        aria-label={t("arrowLeftSlider")}
       >
         <FontAwesomeIcon icon={faArrowLeft} />
       </button>
@@ -39,7 +41,7 @@ const Slider = ({ images }) => {
       <button
         onClick={nextSlide}
         className="slider-btn next-btn"
-        aria-label="Next slide"
+        aria-label={t("arrowRightSlider")}
       >
         <FontAwesomeIcon icon={faArrowRight} />
       </button>
