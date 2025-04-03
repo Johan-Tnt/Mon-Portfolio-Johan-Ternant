@@ -19,11 +19,25 @@ const Header = () => {
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
-    setIsDropdownOpen(false); // Ferme le menu après la sélection
+    setIsDropdownOpen(false); //Ferme le menu après la sélection
+  };
+
+  //Liste des langues disponibles
+  const languageNames = {
+    fr: "Français",
+    en: "English",
   };
 
   return (
     <div className="header">
+      {/* Lien d'évitement (invisible mais accessible) */}
+      <a
+        href="#language-menu"
+        className="visually-hidden visually-hidden-focusable"
+      >
+        {t("skipToLanguageSelection")}
+      </a>
+
       <img
         src="./src/assets/img-webp-cp/Portfolio-banner-new.webp"
         alt=""
@@ -70,38 +84,30 @@ const Header = () => {
             </NavLink>
           </li>
           {/* Sélecteur de langue */}
-          <li className="language-dropdown li_navigation">
+          <li id="language-menu" className="language-dropdown li_navigation">
             <button
               className="change-language"
               onClick={toggleDropdown}
-              aria-label={t("changeLanguage")}
               aria-expanded={isDropdownOpen}
               aria-controls="language-menu"
             >
-              {i18n.language === "fr" ? "Français" : "English"}
+              <span className="visually-hidden">{t("changeLanguage")}</span>
+              {languageNames[i18n.language] || i18n.language}
             </button>
             {isDropdownOpen && (
               <ul className="dropdown-content">
-                <li>
-                  <button
-                    onClick={() => changeLanguage("fr")}
-                    aria-label="Français (Langue sélectionnée)"
-                    aria-pressed={i18n.language === "fr"}
-                    lang="fr"
-                  >
-                    Français
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => changeLanguage("en")}
-                    aria-label="English (Selected language)"
-                    aria-pressed={i18n.language === "en"}
-                    lang="en"
-                  >
-                    English
-                  </button>
-                </li>
+                {Object.entries(languageNames).map(([code, name]) => (
+                  <li key={code}>
+                    <button
+                      onClick={() => changeLanguage(code)}
+                      aria-label={`${name} (${t("selectLanguage")})`}
+                      aria-pressed={i18n.language === code}
+                      lang={code}
+                    >
+                      {name}
+                    </button>
+                  </li>
+                ))}
               </ul>
             )}
           </li>

@@ -27,7 +27,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; //Place l’image en arrière-plan
   border-radius: 18px;
   filter: brightness(70%); //Réduit la luminosité pour assombrir l’image
 }
@@ -156,7 +155,6 @@
   .dropdown-content {
     position: absolute;
     background-color: white;
-    //min-width: 120px;
     width: 100%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
     z-index: 1;
@@ -183,6 +181,48 @@
       }
     }
   }
+  &.open .dropdown-content {
+    display: block;
+  }
+}
+//Cache l'élément visuellement mais accessible aux lecteurs d'écran (sr-only, sr-only-focusable)
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+//Rend l'élément visible lorsqu'il est focalisé
+.visually-hidden-focusable:focus,
+.visually-hidden-focusable:active {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 8px;
+  background-color: #000;
+  color: #fff;
+  z-index: 1000;
+  text-decoration: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  background: var(
+    --Button-Gradient,
+    linear-gradient(193deg, #504a4a -11.44%, #6e6e6e 123.93%)
+  );
+  transition: background-color 0.3s, transform 0.2s;
+}
+//Effet au survol
+.visually-hidden-focusable:focus:hover,
+.visually-hidden-focusable:active:hover {
+  background: linear-gradient(135deg, #8b3e3a 40%, #800020 60%, #a55e3f 80%);
+  transform: scale(1.05);
 }
 
 //Media Queries "Mobile first"

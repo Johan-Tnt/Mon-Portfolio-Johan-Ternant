@@ -3,6 +3,8 @@
   "home": "Home",
   "projects": "Projects",
   "changeLanguage": "Change language",
+  "selectLanguage": "Selected language",
+  "skipToLanguageSelection": "Skip to language selection",
 
   "helloTitle": "Hello, I'm Johan",
   "passionateTitle": "Passionate about web, design, and interactive experiences",
