@@ -50,7 +50,7 @@
     /*Noir bleuté*/ 0px 4px 8px rgba(12, 14, 20, 0.6),
     /*Marron orangé*/ 0px 6px 12px rgba(165, 94, 63, 0.6),
     /*Rouge brique profond*/ 0px 8px 16px rgba(139, 62, 58, 0.6),
-    /* Burgundy classique*/ 0px 10px 20px rgba(128, 0, 32, 0.6);
+    /*Burgundy classique*/ 0px 10px 20px rgba(128, 0, 32, 0.6);
 }
 .navigation {
   position: absolute;
@@ -99,11 +99,13 @@
     /*Marron orangé*/ 0px 6px 12px rgba(165, 94, 63, 0.6),
     /*Rouge brique profond*/ 0px 8px 16px rgba(139, 62, 58, 0.6),
     /*Burgundy classique*/ 0px 10px 20px rgba(128, 0, 32, 0.6);
+  padding-bottom: 20px;
 }
 .profile_dev {
   display: block;
   padding-left: 20px;
   margin-bottom: 70px;
+  order: 1;
 }
 .img_profile {
   display: flex;
@@ -118,7 +120,6 @@
 //Contient le bouton de changement de langues
 .language-dropdown {
   position: relative;
-  //display: inline-block;
   margin-left: 20px;
 
   .change-language {
@@ -199,15 +200,17 @@
 //Rend l'élément visible lorsqu'il est focalisé
 .visually-hidden-focusable:focus,
 .visually-hidden-focusable:active {
-  position: static;
-  width: auto;
+  position: relative;
+  width: 100px;
   height: auto;
   margin: 0;
   padding: 8px;
   background-color: #000;
   color: #fff;
-  z-index: 1000;
-  text-decoration: none;
+  z-index: 2;
+  order: 2; //Permet de mettre le bouton sr-only après l'img et les informations "Johan Ternant" et Intégrateur web
+  top: 0;
+  right: 10px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
@@ -258,5 +261,12 @@
   }
   .information_profile {
     margin-left: 10px;
+  }
+  .visually-hidden-focusable:focus,
+  .visually-hidden-focusable:active {
+    right: 240px;
+    margin-bottom: 155px;
+    width: auto;
+    height: auto;
   }
 }

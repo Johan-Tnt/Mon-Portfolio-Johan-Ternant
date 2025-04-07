@@ -12,7 +12,7 @@
   }
   .bento-box {
     border-radius: 20px;
-    background: rgba(12, 14, 20, 0.8); // Fond semi-transparent
+    background: rgba(12, 14, 20, 0.8); //Fond semi-transparent
     border: solid 1px #ccc;
     padding-left: 20px;
     padding-right: 15px;
@@ -51,7 +51,6 @@
   }
   .skills-item h3 {
     display: flex;
-    //align-items: center;
     gap: 0.5rem;
     font-size: 1rem;
   }
@@ -187,10 +186,7 @@
     //Facilite la navigation au clavier
     a:focus-visible {
       outline: none;
-      /*
-        Une première ombre fine (largeur = décalage) de la couleur du
-        fond, une deuxième pour notre cadre (largeur = décalage + cadre)
-      */
+      //Une première ombre fine (largeur = décalage) de la couleur du fond, une deuxième pour notre cadre (largeur = décalage + cadre)
       box-shadow: 0 0 0 2px white, 0 0 0 5px #a55e3f;
     }
   }
