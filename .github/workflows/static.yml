@@ -36,20 +36,20 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20' 
+          node-version: "20"
 
       - name: Install dependencies
-        run: npm install
+        run: cd portfolio-johan-ternant && npm install
 
       # Build the project
       - name: Build the project
-        run: npm run build
+        run: cd portfolio-johan-ternant && npm run build
 
       # Upload the build directory as artifact
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: "./portfolio-johan-ternant/dist"
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
