@@ -1,14 +1,16 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
-export default defineConfig({
-  base: "/",
-  plugins: [react()],
-  build: {
-    minify: "esbuild",
-    rollupOptions: {
-      treeshake: true,
+// https://vitejs.dev/config/
+export default defineConfig(({ mode }) => {
+  return {
+    base: mode === "production" ? "/Mon-Portfolio-Johan-Ternant/" : "/",
+    plugins: [react()],
+    build: {
+      minify: "esbuild", //Minification rapide
+      rollupOptions: {
+        treeshake: true, //Active explicitement le tree shaking
+      },
     },
-  },
+  };
 });
