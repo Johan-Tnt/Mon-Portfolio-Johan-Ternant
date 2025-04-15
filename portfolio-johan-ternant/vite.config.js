@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 //https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   return {
-    base: mode === "production" ? "/Mon-Portfolio-Johan-Ternant/" : "/",
+    base: mode === "production" ? "/portfolio-johan-ternant/" : "/",
     plugins: [react()],
     build: {
       minify: "esbuild", //Minification rapide
