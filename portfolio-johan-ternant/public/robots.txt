@@ -1,4 +1,4 @@
-# www.robotstxt.org - Fichier robots.txt pour Johan.Ternant.com
+# www.robotstxt.org - Fichier robots.txt pour www.johan-ternant.fr
 
 User-agent: GPTBot
 User-agent: Amazonbot

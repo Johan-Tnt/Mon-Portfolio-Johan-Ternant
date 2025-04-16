@@ -8,6 +8,8 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faDiagramProject } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
+import bannerImage from "../assets/img-profile-dev/Portfolio-banner-new.webp";
+import profileImage from "../assets/img-profile-dev/Johan-Ternant-profile-new.webp";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -39,7 +41,7 @@ const Header = () => {
       </a>
 
       <img
-        src="./src/assets/img-webp-cp/Portfolio-banner-new.webp"
+        src={bannerImage}
         alt=""
         width="2000"
         height="500"
@@ -51,7 +53,7 @@ const Header = () => {
         <div className="profile_dev">
           <div className="img_profile">
             <img
-              src="./src/assets/img-profile-dev/Johan-Ternant-profile-new.webp"
+              src={profileImage}
               alt="Johan Ternant"
               className="img_johan"
               width="90"

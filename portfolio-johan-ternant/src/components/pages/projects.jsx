@@ -10,35 +10,35 @@ const projects = [
     tags: ["Frontend", "React", "ReactRouter", "Sass"],
     images: [
       {
-        src: "./src/assets/img-webp-cp/Mon-Portfolio-1-new.webp",
+        src: "/img-webp-cp/Mon-Portfolio-1-new.webp",
         alt: "portfolioImageAlt1",
       },
       {
-        src: "./src/assets/img-webp-cp/Mon-Portfolio-2-new.webp",
+        src: "/img-webp-cp/Mon-Portfolio-2-new.webp",
         alt: "portfolioImageAlt2",
       },
       {
-        src: "./src/assets/img-webp-cp/Mon-Portfolio-3-new.webp",
+        src: "/img-webp-cp/Mon-Portfolio-3-new.webp",
         alt: "portfolioImageAlt3",
       },
       {
-        src: "./src/assets/img-webp-cp/Mon-Portfolio-4-new.webp",
+        src: "/img-webp-cp/Mon-Portfolio-4-new.webp",
         alt: "portfolioImageAlt4",
       },
       {
-        src: "./src/assets/img-webp-cp/Mon-Portfolio-5-new.webp",
+        src: "/img-webp-cp/Mon-Portfolio-5-new.webp",
         alt: "portfolioImageAlt5",
       },
       {
-        src: "./src/assets/img-webp-cp/Mon-Portfolio-6-new.webp",
+        src: "/img-webp-cp/Mon-Portfolio-6-new.webp",
         alt: "portfolioImageAlt6",
       },
       {
-        src: "./src/assets/img-webp-cp/Mon-Portfolio-7-new.webp",
+        src: "/img-webp-cp/Mon-Portfolio-7-new.webp",
         alt: "porfolioImageAlt7",
       },
       {
-        src: "./src/assets/img-webp-cp/Mon-Portfolio-8-new.webp",
+        src: "/img-webp-cp/Mon-Portfolio-8-new.webp",
         alt: "porfolioImageAlt8",
       },
     ],
@@ -50,31 +50,31 @@ const projects = [
     tags: ["Frontend", "Backend", "React", "ReactRouter", "Redux", "Sass"],
     images: [
       {
-        src: "./src/assets/img-webp-cp/Argent-Bank-1-new.webp",
+        src: "/img-webp-cp/Argent-Bank-1-new.webp",
         alt: "ArgentBankImageAlt1",
       },
       {
-        src: "./src/assets/img-webp-cp/Argent-Bank-2-new.webp",
+        src: "/img-webp-cp/Argent-Bank-2-new.webp",
         alt: "ArgentBankImageAlt2",
       },
       {
-        src: "./src/assets/img-webp-cp/Argent-Bank-3-new.webp",
+        src: "/img-webp-cp/Argent-Bank-3-new.webp",
         alt: "ArgentBankImageAlt3",
       },
       {
-        src: "./src/assets/img-webp-cp/Argent-Bank-4-new.webp",
+        src: "/img-webp-cp/Argent-Bank-4-new.webp",
         alt: "ArgentBankImageAlt4",
       },
       {
-        src: "./src/assets/img-webp-cp/Argent-Bank-API-Swagger-Editor-1-new.webp",
+        src: "/img-webp-cp/Argent-Bank-API-Swagger-Editor-1-new.webp",
         alt: "ArgentBankImageAlt5",
       },
       {
-        src: "./src/assets/img-webp-cp/Argent-Bank-API-Swagger-Editor-2-new.webp",
+        src: "/img-webp-cp/Argent-Bank-API-Swagger-Editor-2-new.webp",
         alt: "ArgentBankImageAlt6",
       },
       {
-        src: "./src/assets/img-webp-cp/Argent-Bank-API-Swagger-Editor-3-new.webp",
+        src: "/img-webp-cp/Argent-Bank-API-Swagger-Editor-3-new.webp",
         alt: "ArgentBankImageAlt7",
       },
     ],
@@ -87,27 +87,27 @@ const projects = [
     tags: ["Frontend", "ReactDevTools"],
     images: [
       {
-        src: "./src/assets/img-webp-cp/724Events-1-new.webp",
+        src: "/img-webp-cp/724Events-1-new.webp",
         alt: "724EventsImageAlt1",
       },
       {
-        src: "./src/assets/img-webp-cp/724Events-2-new.webp",
+        src: "/img-webp-cp/724Events-2-new.webp",
         alt: "724EventsImageAlt2",
       },
       {
-        src: "./src/assets/img-webp-cp/724Events-3-new.webp",
+        src: "/img-webp-cp/724Events-3-new.webp",
         alt: "724EventsImageAlt3",
       },
       {
-        src: "./src/assets/img-webp-cp/724Events-4-new.webp",
+        src: "/img-webp-cp/724Events-4-new.webp",
         alt: "724EventsImageAlt4",
       },
       {
-        src: "./src/assets/img-webp-cp/724Events-5-new.webp",
+        src: "/img-webp-cp/724Events-5-new.webp",
         alt: "724EventsImageAlt5",
       },
       {
-        src: "./src/assets/img-webp-cp/724Events-6-new.webp",
+        src: "/img-webp-cp/724Events-6-new.webp",
         alt: "724EventsImageAlt6",
       },
     ],
@@ -128,27 +128,27 @@ const projects = [
     ],
     images: [
       {
-        src: "./src/assets/img-webp-cp/Nina-Carducci-1-new.webp",
+        src: "/img-webp-cp/Nina-Carducci-1-new.webp",
         alt: "NinaCarducciImageAlt1",
       },
       {
-        src: "./src/assets/img-webp-cp/Nina-Carducci-2-new.webp",
+        src: "/img-webp-cp/Nina-Carducci-2-new.webp",
         alt: "NinaCarducciImageAlt2",
       },
       {
-        src: "./src/assets/img-webp-cp/Nina-Carducci-3-new.webp",
+        src: "/img-webp-cp/Nina-Carducci-3-new.webp",
         alt: "NinaCarducciImageAlt3",
       },
       {
-        src: "./src/assets/img-webp-cp/Nina-Carducci-4-new.webp",
+        src: "/img-webp-cp/Nina-Carducci-4-new.webp",
         alt: "NinaCarducciImageAlt4",
       },
       {
-        src: "./src/assets/img-webp-cp/Nina-Carducci-5-new.webp",
+        src: "/img-webp-cp/Nina-Carducci-5-new.webp",
         alt: "NinaCarducciImageAlt5",
       },
       {
-        src: "./src/assets/img-webp-cp/Nina-Carducci-6-new.webp",
+        src: "/img-webp-cp/Nina-Carducci-6-new.webp",
         alt: "NinaCarducciImageAlt6",
       },
     ],
@@ -161,19 +161,19 @@ const projects = [
     tags: ["Frontend", "Backend", "React", "ReactRouter", "Sass"],
     images: [
       {
-        src: "./src/assets/img-webp-cp/Kasa-1-new.webp",
+        src: "/img-webp-cp/Kasa-1-new.webp",
         alt: "KasaImageAlt1",
       },
       {
-        src: "./src/assets/img-webp-cp/Kasa-2-new.webp",
+        src: "/img-webp-cp/Kasa-2-new.webp",
         alt: "KasaImageAlt2",
       },
       {
-        src: "./src/assets/img-webp-cp/Kasa-3-new.webp",
+        src: "/img-webp-cp/Kasa-3-new.webp",
         alt: "KasaImageAlt3",
       },
       {
-        src: "./src/assets/img-webp-cp/Kasa-4-new.webp",
+        src: "/img-webp-cp/Kasa-4-new.webp",
         alt: "KasaImageAlt4",
       },
     ],
@@ -192,43 +192,43 @@ const projects = [
     ],
     images: [
       {
-        src: "./src/assets/img-webp-cp/Menu-Maker-1-new.webp",
+        src: "/img-webp-cp/Menu-Maker-1-new.webp",
         alt: "MenuMakerImageAlt1",
       },
       {
-        src: "./src/assets/img-webp-cp/Menu-Maker-2-new.webp",
+        src: "/img-webp-cp/Menu-Maker-2-new.webp",
         alt: "MenuMakerImageAlt2",
       },
       {
-        src: "./src/assets/img-webp-cp/Menu-Maker-3-new.webp",
+        src: "/img-webp-cp/Menu-Maker-3-new.webp",
         alt: "MenuMakerImageAlt3",
       },
       {
-        src: "./src/assets/img-webp-cp/Menu-Maker-4-new.webp",
+        src: "/img-webp-cp/Menu-Maker-4-new.webp",
         alt: "MenuMakerImageAlt4",
       },
       {
-        src: "./src/assets/img-webp-cp/Menu-Maker-5-new.webp",
+        src: "/img-webp-cp/Menu-Maker-5-new.webp",
         alt: "MenuMakerImageAlt5",
       },
       {
-        src: "./src/assets/img-webp-cp/Menu-Maker-6-new.webp",
+        src: "/img-webp-cp/Menu-Maker-6-new.webp",
         alt: "MenuMakerImageAlt6",
       },
       {
-        src: "./src/assets/img-webp-cp/Menu-Maker-7-new.webp",
+        src: "/img-webp-cp/Menu-Maker-7-new.webp",
         alt: "MenuMakerImageAlt7",
       },
       {
-        src: "./src/assets/img-webp-cp/Menu-Maker-8-new.webp",
+        src: "/img-webp-cp/Menu-Maker-8-new.webp",
         alt: "MenuMakerImageAlt8",
       },
       {
-        src: "./src/assets/img-webp-cp/Menu-Maker-9-new.webp",
+        src: "/img-webp-cp/Menu-Maker-9-new.webp",
         alt: "MenuMakerImageAlt9",
       },
       {
-        src: "./src/assets/img-webp-cp/Menu-Maker-10-new.webp",
+        src: "/img-webp-cp/Menu-Maker-10-new.webp",
         alt: "MenuMakerImageAlt10",
       },
     ],
@@ -241,31 +241,31 @@ const projects = [
     tags: ["Frontend", "Backend", "JavaScript", "HTML", "CSS"],
     images: [
       {
-        src: "./src/assets/img-webp-cp/Sophie-Bluel-1-new.webp",
+        src: "/img-webp-cp/Sophie-Bluel-1-new.webp",
         alt: "SophieBluelImageAlt1",
       },
       {
-        src: "./src/assets/img-webp-cp/Sophie-Bluel-2-new.webp",
+        src: "/img-webp-cp/Sophie-Bluel-2-new.webp",
         alt: "SophieBluelImageAlt2",
       },
       {
-        src: "./src/assets/img-webp-cp/Sophie-Bluel-3-new.webp",
+        src: "/img-webp-cp/Sophie-Bluel-3-new.webp",
         alt: "SophieBluelImageAlt3",
       },
       {
-        src: "./src/assets/img-webp-cp/Sophie-Bluel-4-new.webp",
+        src: "/img-webp-cp/Sophie-Bluel-4-new.webp",
         alt: "SophieBluelImageAlt4",
       },
       {
-        src: "./src/assets/img-webp-cp/Sophie-Bluel-5-new.webp",
+        src: "/img-webp-cp/Sophie-Bluel-5-new.webp",
         alt: "SophieBluelImageAlt5",
       },
       {
-        src: "./src/assets/img-webp-cp/Sophie-Bluel-6-new.webp",
+        src: "/img-webp-cp/Sophie-Bluel-6-new.webp",
         alt: "SophieBluelImageAlt6",
       },
       {
-        src: "./src/assets/img-webp-cp/Sophie-Bluel-7-new.webp",
+        src: "/img-webp-cp/Sophie-Bluel-7-new.webp",
         alt: "SophieBluelImageAlt7",
       },
     ],
@@ -278,19 +278,19 @@ const projects = [
     tags: ["Frontend", "HTML", "Sass"],
     images: [
       {
-        src: "./src/assets/img-webp-cp/OhMyFood-1-new.webp",
+        src: "/img-webp-cp/OhMyFood-1-new.webp",
         alt: "OhMyFoodImageAlt1",
       },
       {
-        src: "./src/assets/img-webp-cp/OhMyFood-2-new.webp",
+        src: "/img-webp-cp/OhMyFood-2-new.webp",
         alt: "OhMyFoodImageAlt2",
       },
       {
-        src: "./src/assets/img-webp-cp/OhMyFood-3-new.webp",
+        src: "/img-webp-cp/OhMyFood-3-new.webp",
         alt: "OhMyFoodImageAlt3",
       },
       {
-        src: "./src/assets/img-webp-cp/OhMyFood-4-new.webp",
+        src: "/img-webp-cp/OhMyFood-4-new.webp",
         alt: "OhMyFoodImageAlt4",
       },
     ],

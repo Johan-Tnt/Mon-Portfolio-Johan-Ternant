@@ -131,7 +131,7 @@ const Home = () => {
           title={t("latestProjectTitle")}
         >
           <img
-            src="./src/assets/img-webp-cp/Argent-Bank-1-new.webp"
+            src="/img-webp-cp/Argent-Bank-1-new.webp"
             alt={t("latestProjectAlt")}
             width="1636"
             height="801"

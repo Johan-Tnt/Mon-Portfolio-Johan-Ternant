@@ -23,7 +23,7 @@ const SocialLinks = () => {
         <FontAwesomeIcon icon={faLinkedin} size={"xl"} />
       </a>
       <a
-        href="./public/media/CV-Johan-Web.pdf"
+        href="media/CV-Johan-Web.pdf"
         target="_blank"
         className="contact_button"
         aria-label={t("contactLinkCV")}
