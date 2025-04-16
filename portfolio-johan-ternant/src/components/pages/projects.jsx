@@ -233,7 +233,7 @@ const projects = [
       },
     ],
 
-    folderLink: "./public/menu-maker/menu-maker.zip",
+    folderLink: "/menu-maker/menu-maker.zip",
   },
   {
     title: "Sophie Bluel",
