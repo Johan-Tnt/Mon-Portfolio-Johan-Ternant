@@ -1,5 +1,11 @@
 # www.robotstxt.org - Fichier robots.txt pour www.johan-ternant.fr
 
+# Bloquer GPTBot et Amazonbot
 User-agent: GPTBot
 User-agent: Amazonbot
 Disallow: /
+
+# Autoriser les autres bots
+User-agent: *
+Allow: /
+Sitemap: https://www.johan-ternant.fr/SEO/sitemap.xml
