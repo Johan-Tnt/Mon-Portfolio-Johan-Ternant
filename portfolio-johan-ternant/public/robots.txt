@@ -8,4 +8,4 @@ Disallow: /
 # Autoriser les autres bots
 User-agent: *
 Allow: /
-Sitemap: https://www.johan-ternant.fr/SEO/sitemap.xml
+Sitemap: https://www.johan-ternant.fr/sitemap.xml
