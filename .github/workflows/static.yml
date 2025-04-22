@@ -32,6 +32,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Cache image optimization
+        uses: actions/cache@v4
+        with:
+          path: portfolio-johan-ternant/.image-cache
+          key: ${{ runner.os }}-vite-image-cache-${{ hashFiles('portfolio-johan-ternant/src/assets/**') }}
+          restore-keys: |
+            ${{ runner.os }}-vite-image-cache-
+
       # Setup Node.js and install dependencies
       - name: Set up Node.js
         uses: actions/setup-node@v3
