@@ -20,3 +20,18 @@
   text-align: center;
   line-height: 1.4;
 }
+.icon_footer {
+  right: 5px;
+  position: relative;
+}
+.navigation_footer {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  padding-right: 40px;
+  a:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+    border-radius: 8px;
+  }
+}

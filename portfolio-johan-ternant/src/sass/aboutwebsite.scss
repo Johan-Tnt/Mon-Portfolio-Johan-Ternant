@@ -1,0 +1,105 @@
+//Code éditer par Johan
+.about_website_box_title {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px #8b3e3a;
+  background: rgba(12, 14, 20, 0.8);
+}
+.about_website_title {
+  font-size: 1.5rem;
+  color: white;
+}
+//Bento box À propos
+.bento_box_about_website {
+  background: rgba(12, 14, 20, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px #8b3e3a;
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about_website_bento {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+
+  .about_website_icon {
+    margin-left: 5px;
+  }
+  .about_website_text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+}
+
+//Bento box Hébergements
+.box-host {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+//Bento box Image de bannière Droits d'auteur
+.box-copyrights {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+//Bento box Mentions légales
+.box-all-rights {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+//Liens importants de la page À propos
+.about_website_links {
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  text-shadow:
+    /*Noir bleuté*/ 0px 4px 8px rgba(12, 14, 20, 0.6),
+    /*Marron orangé*/ 0px 6px 12px rgba(165, 94, 63, 0.6),
+    /*Rouge brique profond*/ 0px 8px 16px rgba(139, 62, 58, 0.6),
+    /*Burgundy classique*/ 0px 10px 20px rgba(128, 0, 32, 0.6);
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+    border-radius: 8px;
+  }
+}
+
+//Media Queries "Mobile first"
+//Contient la mise en page visuelle du Bento Design Tablette et desktop
+@media (min-width: 768px) {
+  .about_website_bento {
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+  .box-host {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .box-copyrights {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .box-all-rights {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}

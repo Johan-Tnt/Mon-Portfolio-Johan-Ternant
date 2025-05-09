@@ -3,7 +3,7 @@
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTriangleExclamation } from "@fortawesome/free-solid-svg-icons"; // Icône d'erreur
+import { faTriangleExclamation } from "@fortawesome/free-solid-svg-icons"; //Icône d'erreur
 
 const Error404 = () => {
   const navigate = useNavigate(); //Utilisation du hook useNavigate
@@ -13,22 +13,29 @@ const Error404 = () => {
   };
   const { t } = useTranslation();
   return (
-    <div className="message_error" role="alert">
-      <div className="error_box">
-        <FontAwesomeIcon icon={faTriangleExclamation} className="error_icon" />
-        <h1 className="error_title">{t("error404Title")}</h1>
-        <p className="error_text" aria-live="assertive">
-          {t("error404Text")}
-        </p>
-        <button
-          onClick={handleRedirect}
-          className="error_redirection"
-          aria-label={t("error404Redirection")}
-        >
-          {t("error404Redirection")}
-        </button>
-      </div>
-    </div>
+    <main>
+      <section>
+        <div className="message_error" role="alert">
+          <div className="error_box">
+            <FontAwesomeIcon
+              icon={faTriangleExclamation}
+              className="error_icon"
+            />
+            <h1 className="error_title">{t("error404Title")}</h1>
+            <p className="error_text" aria-live="assertive">
+              {t("error404Text")}
+            </p>
+            <button
+              onClick={handleRedirect}
+              className="error_redirection"
+              aria-label={t("error404Redirection")}
+            >
+              {t("error404Redirection")}
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 };
 

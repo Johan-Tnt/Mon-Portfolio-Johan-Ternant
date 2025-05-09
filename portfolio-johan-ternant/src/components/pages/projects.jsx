@@ -41,6 +41,14 @@ const projects = [
         src: "/img-webp-cp/Mon-Portfolio-8-new.webp",
         alt: "porfolioImageAlt8",
       },
+      {
+        src: "/img-webp-cp/Mon-Portfolio-9-new.webp",
+        alt: "porfolioImageAlt9",
+      },
+      {
+        src: "/img-webp-cp/Mon-Portfolio-10-new.webp",
+        alt: "porfolioImageAlt10",
+      },
     ],
     githubLink: "https://github.com/Johan-Tnt/Mon-Portfolio-Johan-Ternant",
   },
