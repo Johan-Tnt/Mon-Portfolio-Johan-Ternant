@@ -13,10 +13,4 @@
     <changefreq>monthly</changefreq> <!--balise optionnelle-->
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://www.johan-ternant.fr/about-website</loc>
-    <lastmod>2025-05-09</lastmod> <!--balise optionnelle-->
-    <changefreq>monthly</changefreq> <!--balise optionnelle-->
-    <priority>0.6</priority>
-  </url>
 </urlset>
