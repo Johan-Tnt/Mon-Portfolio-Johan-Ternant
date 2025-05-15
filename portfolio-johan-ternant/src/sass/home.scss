@@ -86,9 +86,9 @@
     }
   }
 
-  //Box Social
-  .bento-box.box-social {
-    .link_social {
+  //Box Contact
+  .bento-box.box-contact {
+    .link_contact {
       display: flex;
       gap: 1rem;
       padding-bottom: 30px;
@@ -213,7 +213,7 @@
   .box-last-projects {
     grid-column: span 2;
   }
-  .box-social {
+  .box-contact {
     grid-column: span 1;
     grid-row: span 2;
   }
@@ -246,7 +246,7 @@
   .box-last-projects {
     grid-column: span 3;
   }
-  .home .box-social {
+  .home .box-contact {
     grid-row: span 1;
   }
   .box-web-tools {

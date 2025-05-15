@@ -92,17 +92,6 @@ const AboutWebsite = () => {
               </a>
             </p>
             <p>
-              {t("attributionInformationText")}
-              <a
-                href="https://support.freepik.com/s/article/Attribution-How-when-and-where?language=en_US&_gl=1*ftm9l1*_gcl_au*NDMxOTE0Mzk3LjE3NDA3NDIzNzk.*_ga*MjU0NTQxNTkwLjE3NDA3NDIzNzk.*_ga_QWX66025LC*czE3NDY2MDU0ODckbzgkZzEkdDE3NDY2MDU1MjckajIwJGwwJGgw"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="about_website_links"
-              >
-                {t("attributionFreepikLink")}
-              </a>
-            </p>
-            <p>
               {t("bannerCopyrightText2")}
               <a
                 href="https://fr.freepik.com/photos-gratuite/branche-fleur-cerisier_12686583.htm#fromView=search&page=1&position=39&uuid=8e368b95-5fc2-432c-aa31-e32074e5635e&query=image+cerisier"

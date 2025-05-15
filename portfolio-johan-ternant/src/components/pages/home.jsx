@@ -1,6 +1,6 @@
 //Code éditer par Johan
 //Contient le menu principal "Home"
-import SocialLinks from "../bento/social-links";
+import ContactLinks from "../bento/contact-links";
 import BentoBox from "../bento/bento";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -116,13 +116,13 @@ const Home = () => {
           </div>
         </BentoBox>
 
-        {/* Bloc des liens sociaux */}
-        <BentoBox className="box-social" title={t("contactTitle")}>
+        {/* Bloc contact */}
+        <BentoBox className="box-contact" title={t("contactTitle")}>
           <p>
             <FontAwesomeIcon icon={faEnvelope} />
             <a href="mailto:ternant.johan@sfr.fr">{t("contactEmail")}</a>
           </p>
-          <SocialLinks />
+          <ContactLinks />
         </BentoBox>
 
         {/* Bloc dédié au dernier projet réalisé */}
